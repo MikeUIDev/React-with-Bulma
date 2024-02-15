@@ -1,0 +1,38 @@
+body {
+  font-family: Lato, helvetica, arial, serif;
+  margin-top: 60px;
+}
+
+.navbar-item {
+  font-family: "Open Sans", helvetica, arial, serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #333;
+}
+
+.main-content {
+  padding: 140px 0 100px;
+}
+
+footer {
+  text-align: center;
+  .logo {
+    height: 14px;
+  }
+  .year {
+    margin: 30px;
+  }
+}
+
+/* Footer */
+footer {margin-bottom: 100px; margin-top: 100px; display: inline-block; width: 100%;}
+footer ul {width: 100%;}
+footer .copyright li {font-size: 14px;}
+footer .footer-col {display: flex; align-items: center; justify-content: center; flex-direction: column; margin-bottom: 20px;}
+footer .footer-header {font-weight: bold; margin-bottom: 5px;}
+
+@media (min-width: 992px) {
+  footer .footer-col {align-items: flex-start;}
+}
