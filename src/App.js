@@ -13,7 +13,6 @@ import User from "./components/pages/User";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
 
-
 // import '../src/assets/css/App.css';
 
 import "./assets/sass/bulma.scss"

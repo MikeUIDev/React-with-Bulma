@@ -8,7 +8,7 @@ function User() {
           <div className="col-lg-7">
             <img
               className="img-fluid rounded mb-4 mb-lg-0"
-              src="http://placehold.it/900x400"
+              src="https://picsum.photos/600/300"
               alt=""
             />
           </div>
