@@ -2,28 +2,18 @@ import React from "react";
  
 function Home() {
     return (
-      <div className="home">
-        <div className="container">
-          <div className="row align-items-center my-5">
-            <div className="col-lg-7">
-              <img
-                className="img-fluid rounded mb-4 mb-lg-0"
-                src="https://picsum.photos/600/300"
-                alt=""
-              />
+        <section className="home hero is-medium has-text-centered is-fullheight is-fullheight-with-navbar">
+            <div className="hero-body">
+                <div className="container">
+                    <div className="columns is-centered">
+                        <div className="column">
+                            <h1 className="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile">Hey, I am Mike Lin</h1>
+                            <h2 className="subtitle is-size-4-tablet">I'm a Frontend Developer and User Experience Designer based in San Francisco Bay Area</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div className="col-lg-5">
-              <h1 className="font-weight-light">Home</h1>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy text
-                ever since the 1500s, when an unknown printer took a galley of
-                type and scrambled it to make a type specimen book.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+        </section>
     );
   }
   

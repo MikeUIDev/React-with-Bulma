@@ -1,9 +1,12 @@
 import React from 'react'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
 
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Navbar/Footer";
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Routes,
     Route,
 } from "react-router-dom";
@@ -16,6 +19,9 @@ import Contact from "./components/pages/Contact";
 // import '../src/assets/css/App.css';
 
 import "./assets/sass/bulma.scss"
+
+
+library.add(faCoffee, fab)
 
 function App() {
   return (
