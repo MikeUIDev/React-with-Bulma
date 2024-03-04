@@ -13,12 +13,10 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bulma": "^0.9.4",
-    "npm-check-updates": "^16.14.15",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.0",
-    "react-scripts": "5.0.1",
-    "styled-components": "^6.1.8",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -49,7 +47,9 @@
     ]
   },
   "devDependencies": {
-    "node-sass": "^7.0.3",
-    "scss-reset": "^1.4.2"
+    "sass": "^1.71.1",
+    "sass-loader": "^14.1.1",
+    "scss-reset": "^1.4.2",
+    "webpack": "^5.90.3"
   }
 }

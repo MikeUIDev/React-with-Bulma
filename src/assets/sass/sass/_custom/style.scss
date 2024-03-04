@@ -1,10 +1,18 @@
 body {
   font-family: 'Open Sans', Helvetica, arial;
-  margin-top: 60px;
+  background-color: #06191D;
+  color: white;
 }
 
 p {
   font-family: Lato, Helvetica, arial;
+}
+
+a {
+  color: #00c5c8;
+  &:hover {
+    color: white;
+  }
 }
 
 a, .button {
@@ -21,31 +29,50 @@ a, .button {
   color: #141c3a;
   padding: 1.2rem;
   font-size: 18px;
+
+  // Custom Neon Color
+  &.custom-neon {
+    background-color: #00c5c8;
+      color: white;
+    border: 2px solid #00c5c8;
+    
+    &:hover {
+      background-color: transparent;
+      color: #00c5c8;
+    }
+  }
 }
 
 .navbar {
-  background-color: rgba(255,255,255, 0.9);
+  background-color: rgba(6, 25, 29, 0.8);
 }
+
 .navbar-menu {
   .navbar-item {
     font-family: "Open Sans", helvetica, arial, serif;
     font-size: 18px;
-    color: #141c3a;
+    // color: #141c3a;
+    color: white;
     padding: 1.2rem;
+    &.active {
+      color: #00c5c8;
+    }
     .button.is-outlined {
-      border: 2px solid #bf3048;
+      border: 2px solid #00c5c8;
       font-weight: 600;
-      color: #bf3048;
+      color: #00c5c8;
       min-width: 134px;
-      &:hover {
-        background-color: #bf3048;
+      &:hover,
+      &:focus {
+        background-color: #00c5c8;
         color: #ffffff;
       }
     }
     &:hover {
       background-color: transparent;
-      color: #bf3048;
+      color: #00c5c8;
     }
+
     .text-say-hello {
       &:after {
         content: "Say Hello";
@@ -65,6 +92,49 @@ a, .button {
 //   top: -60px;
 // }
 
+.hero-text {
+  font-size: 4rem;
+  line-height: 1.4;
+  color: white;
+}
+
+/* User */
+#tabs {
+  position: sticky;
+  top: 70px;
+}
+
+#tab-content p {
+  display: none;
+  p {
+    display: block;
+  }
+}
+
+#tab-content p.is-active {
+  display: block;
+}
+
+.top-to-btm {
+  cursor: pointer;
+  position: fixed;
+  bottom: 10%;
+  right: 46%;
+  z-index: 20;
+  @media screen and (min-width: 769px) {
+    bottom: 46%;
+    right: 5%;
+  }
+  svg {
+    color: #00c5c8;
+    &:hover {
+      color: white;
+      transition: all .2s ease-in-out;
+      -webkit-transition: all .2s ease-in-out;
+    }
+  }
+}
+
 /* About */
 .about {
   .skills {
@@ -74,9 +144,15 @@ a, .button {
   .experience {
     align-items: flex-start;
     aside {
-      position: sticky;
-      top: 100px;
+      position: initial;
+      @media screen and (min-width: 769px) {
+        position: sticky;
+        top: 100px;
+      }
     }
+  }
+  h2 {
+    color: white;
   }
 }
 
@@ -91,21 +167,59 @@ a, .button {
   padding: 6rem 1.5rem;
 }
 
+/* Contact */
+.contact {
+  label {
+    color: white;
+  }
+  input,
+  textarea {
+    background-color: #f1f1f1;
+  }
+}
+
 /* Footer */
 footer {
   text-align: center;
+  margin-top: 100px; 
+  display: inline-block; 
+  width: 100%; 
+  background-color: #072227;
   .logo {
     height: 14px;
   }
   .year {
     margin: 30px;
   }
+  .linkedin {
+    &:hover > svg {
+      color: rgb(13,118,168);
+    }
+  }
+  .github {
+    &:hover > svg {
+      color: #1f2328;
+    }
+  }
+  .dribbble {
+    &:hover > svg {
+      color: #ea4c89;
+    }
+  }
+  .email {
+    &:hover > svg {
+      color: #00c5c8;
+    }
+  }
+  .made-by {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-react {
+      margin-left: 8px;
+    }
+  }
 }
-footer {margin-top: 100px; display: inline-block; width: 100%; background-color: transparent;}
-footer ul {width: 100%;}
-footer .copyright li {font-size: 14px;}
-footer .footer-col {display: flex; align-items: center; justify-content: center; flex-direction: column; margin-bottom: 20px;}
-footer .footer-header {font-weight: bold; margin-bottom: 5px;}
 
 @media (min-width: 992px) {
   footer .footer-col {align-items: flex-start;}

@@ -1,18 +1,19 @@
 import React from "react"
 import { Link } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <nav className="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
       <div className="container">
         <div className="navbar-brand">
           {/* <a className="navbar-item" href="/">
             <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"></img>
           </a> */}
-          <Link to="/" className="navbar-item" >
-            <img src="https://bulma.io/images/bulma-logo.png" alt="Logo" width="112" height="28"></img>
-          </Link>
-          <a
+          <NavLink exact to="/" className="navbar-item" >
+            <img src="" alt="Logo" width="112" height="28"></img>
+          </NavLink>
+          <span
             role="button"
             className="navbar-burger burger"
             aria-label="menu"
@@ -28,7 +29,7 @@ function Navbar() {
             <span aria-hidden="true" />
             <span aria-hidden="true" />
             <span aria-hidden="true" />
-          </a>
+          </span>
         </div>
         <div id="navbarHeader" className="navbar-menu">
           <div className="navbar-end">
@@ -50,9 +51,9 @@ function Navbar() {
             </div>*/}
 
 
-            <Link to="/developer" className="navbar-item is-dark is-inverted frontend-developer">Frontend Developer</Link>
-            <Link to="/user" className="navbar-item is-dark is-inverted ux-design">UX Design</Link>
-            <Link to="/about" className="navbar-item is-dark is-inverted about-me">About Me</Link>
+            <NavLink to="/developer" className="navbar-item is-dark is-inverted frontend-developer">Frontend Developer</NavLink>
+            <NavLink to="/user" className="navbar-item is-dark is-inverted ux-design">UX Design</NavLink>
+            <NavLink to="/about" className="navbar-item is-dark is-inverted about-me">About Me</NavLink>
             <div className="navbar-item contact-me">
               <Link to="/contact" className="button is-link is-outlined is-rounded text-say-hello is-hidden-mobile"></Link>
               <Link to="/contact" className="button is-link is-outlined is-rounded is-hidden-desktop">
