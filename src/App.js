@@ -11,7 +11,7 @@ import {
     Route,
 } from "react-router-dom";
 import Home from "./components/pages/Index";
-import Developer from "./components/pages/Developer";
+import Work from "./components/pages/Work";
 import User from "./components/pages/User";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
@@ -29,7 +29,7 @@ function App() {
           <Navbar />
           <Routes>
               <Route exact path="/" element={<Home />} />
-              <Route path="/developer" element={<Developer />} />
+              <Route path="/work" element={<Work />} />
               <Route path="/user" element={<User />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />}

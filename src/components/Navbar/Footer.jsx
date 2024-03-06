@@ -15,7 +15,7 @@ function Footer() {
     //   <div className="year">&#174; {todayDay}</div>
     // </footer> 
 
-    <footer className="section has-text-centered">
+    <footer className="section footer has-text-centered">
       <div className="container is-narrow">
         <div className="columns is-centered mb-6"> 
           {/* <div className="column is-one-third">

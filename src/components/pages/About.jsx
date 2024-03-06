@@ -75,7 +75,7 @@ function About() {
           <section class="section">
             <div class="columns">
               <div class="column is-10 is-offset-1">
-                <div class="content is-medium">
+                <div class="content is-large">
                   <div class="mb-8">
                     <h2>Frontend Developer</h2>
                     <p className="mb-6">I help company build and optimize interactive websites, and promo specific events via Email Marketing tool. I work across developing interactive elements using frontend languages and apply modern visual design best practices. I believe the end product should give everyone a delightful and an unforgettable experiences.</p>

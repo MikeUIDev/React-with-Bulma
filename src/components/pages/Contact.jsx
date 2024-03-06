@@ -28,7 +28,7 @@ function Contact() {
             <div className="columns is-centered has-text-centered">
               <div className="column is-4">
                 <div className="field">
-                  <label className="label is-medium has-text-left">Name </label>
+                  <label className="label is-medium has-text-left has-text-weight-normal">Name </label>
                   <div className="control has-icons-left">
                     <input className="input is-medium has-text-left" placeholder="Joe Smith" type="text" value={form.yourName} onChange={e => {
                       setForm({
@@ -45,7 +45,7 @@ function Contact() {
               </div>
               <div className="column is-4">
                 <div className="field">
-                  <label className="label is-medium has-text-left">Email</label>
+                  <label className="label is-medium has-text-left has-text-weight-normal">Email</label>
                   <div className="control has-icons-left">
                     <input className="input is-medium" placeholder="hello@domain.com" type="email" value={form.email} onChange={e => {
                       setForm({
@@ -64,7 +64,7 @@ function Contact() {
             <div className="columns is-centered has-text-centered">
               <div className="column is-8">
                   <div className="field">
-                    <label className="label is-medium has-text-left">Message </label>
+                    <label className="label is-medium has-text-left has-text-weight-normal">Message </label>
                     <div className="control">
                       <textarea rows="8" cols="50" type="text" placeholder="Type your message here" className="textarea is-medium has-text-black" value={form.message} onChange={e => {
                         setForm({

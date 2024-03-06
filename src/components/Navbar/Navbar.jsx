@@ -10,8 +10,8 @@ function Navbar() {
           {/* <a className="navbar-item" href="/">
             <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"></img>
           </a> */}
-          <NavLink exact to="/" className="navbar-item" >
-            <img src="" alt="Logo" width="112" height="28"></img>
+          <NavLink exact to="/" className="navbar-item has-text-weight-bold home">
+            Mike Lin
           </NavLink>
           <span
             role="button"
@@ -51,7 +51,7 @@ function Navbar() {
             </div>*/}
 
 
-            <NavLink to="/developer" className="navbar-item is-dark is-inverted frontend-developer">Frontend Developer</NavLink>
+            <NavLink to="/work" className="navbar-item is-dark is-inverted work">Work</NavLink>
             <NavLink to="/user" className="navbar-item is-dark is-inverted ux-design">UX Design</NavLink>
             <NavLink to="/about" className="navbar-item is-dark is-inverted about-me">About Me</NavLink>
             <div className="navbar-item contact-me">
