@@ -1,7 +1,7 @@
 import React from "react";
 import Job from "../Job";
-import Link from "../Link";
-import {ButtonBlue, ButtonRed, ButtonNeon} from "../Buttons"
+import {ButtonNeon} from "../Buttons"
+import BackToTop from "../Backtotop";
 
 const first = [
   'HTML/CSS',
@@ -184,6 +184,8 @@ function About() {
   
         </div>
       </div>
+      {/* Back to Top button */}
+      <BackToTop />
     </section>
   );
 }

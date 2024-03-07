@@ -4,14 +4,9 @@ import { faExternalLink } from '@fortawesome/free-solid-svg-icons'
 
 
 function Job(props) {
-  const noLink = {
-    display: "none"
-  };
-
   return (
     <div className="columns content is-medium mb-6">
       <div className="column is-12">
-        {/* Card */}
         <div className="card">
           <div className="card-image">
             <video loading="lazy" playsInline muted controls className="video" poster={props.videoPoster} width="612" height="413">

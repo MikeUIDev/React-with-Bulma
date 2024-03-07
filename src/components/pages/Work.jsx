@@ -1,6 +1,6 @@
 import React from "react";
 import Project from "../Project"
-import Video from "../Video"
+
 import Nissan from "../../assets/images/Nissan-Heisman-House-ESPN.jpg"
 import DisneyAsia from "../../assets/images/Home-Disney-Asia-Advertising-Sales.jpg"
 import CreativeWorks from "../../assets/images/Home-ESPN-CreativeWorks.jpg"
@@ -11,7 +11,7 @@ import DisneyAsiaVideo from "../../assets/videos/Home-Disney-Asia-Advertising-Sa
 import CreativeWorksVideo from "../../assets/videos/Home-ESPN-CreativeWorks.mp4"
 import AllStateVideo from "../../assets/videos/Allstate-AFCA-Good-Works-Team-ESPN.mp4"
 
-
+import BackToTop from "../Backtotop";
 
 function Work() {
   return (
@@ -22,13 +22,6 @@ function Work() {
             <div className="columns">
               <div className="column is-12">
                 <h1 className="title has-text-white">Work</h1>
-              </div>
-            </div>
-            <div className="columns mb-6">
-              <div className="column">
-                <p>
-                  This is showcase of my most recent work. The world of IoT is constantly evolving and I am learning new skills every day.
-                </p>
               </div>
             </div>
             <div className="columns">
@@ -78,6 +71,8 @@ function Work() {
           </div>
         </div>
       </div>
+      {/* Back to Top button */}
+      <BackToTop />
     </section>
   );
 }
