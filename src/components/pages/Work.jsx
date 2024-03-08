@@ -1,6 +1,8 @@
 import React from "react";
 import Project from "../Project"
 
+import Link from "../Link"
+
 import Nissan from "../../assets/images/Nissan-Heisman-House-ESPN.jpg"
 import DisneyAsia from "../../assets/images/Home-Disney-Asia-Advertising-Sales.jpg"
 import CreativeWorks from "../../assets/images/Home-ESPN-CreativeWorks.jpg"
@@ -15,7 +17,7 @@ import BackToTop from "../Backtotop";
 
 function Work() {
   return (
-    <section className="work hero content is-large is-fullheight-with-navbar"> 
+    <section className="work hero content is-large is-fullheight-with-navbar">
       <div className="page-body">
         <div className="container">
           <div className="section">
@@ -29,9 +31,8 @@ function Work() {
                 <Project
                   videoPoster ={Nissan}
                   videoUrl = {NissanVideo}
-                  name="Nissan Heisman House"
+                  name={<Link listing="Nissan Heisman House" urlLink="https://promo.espn.com/espn/contests/nissan/heisman/2023/index" />}
                   type="Heroku"
-                  link="https://promo.espn.com/espn/contests/nissan/heisman/2023/index"
                   description="A promotion campaign associated with the Heisman Trophy, which fans can vote their favorite college football players in the United States."
                 />
               </div>
@@ -39,9 +40,8 @@ function Work() {
                 <Project
                   videoPoster ={AllState}
                   videoUrl = {AllStateVideo}
-                  name="Allstate AFCA Good Works Team"
+                  name={<Link listing="Allstate AFCA Good Works Team" urlLink="https://promo.espn.com/espn/contests/allstate/2023/index" />}
                   type="Heroku"
-                  link="https://promo.espn.com/espn/contests/allstate/2023/index"
                   description="A promotion campaign which fans can vote their favorite college football players in the United States."
                 />
               </div>
@@ -51,9 +51,8 @@ function Work() {
                 <Project
                   videoPoster ={CreativeWorks}
                   videoUrl = {CreativeWorksVideo}
-                  name="ESPN CreativeWorks"
+                  name={<Link listing="ESPN CreativeWorks" urlLink="https://showcase.espncreativeworks.com/" />}
                   type="Contentful CMS"
-                  link="https://showcase.espncreativeworks.com/"
                   description="A promotion campaign associated with the Heisman Trophy, which fans can vote their favorite college football players in the United States."
                 />
               </div>
@@ -63,7 +62,6 @@ function Work() {
                   videoUrl = {DisneyAsiaVideo}
                   name="Disney Asia Advertising Sales"
                   type="Contentful CMS"
-                  link="https://mikelinstudio.com/images/Home-Disney-Asia-Advertising-Sales.jpg"
                   description="Showcase Disney campaigns in an Asia territory."
                 />
               </div>

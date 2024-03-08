@@ -1,9 +1,10 @@
 import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExternalLink } from '@fortawesome/free-solid-svg-icons'
+import Link from "./Link";
 
 
-function Job(props) {
+function Project(props) {
   return (
     <div className="columns content is-medium mb-6">
       <div className="column is-12">
@@ -17,7 +18,8 @@ function Job(props) {
           <footer className="card-footer mt-4">
             <div className="card-footer-item mb-0 is-flex is-align-items-flex-start is-justify-content-flex-start is-flex-direction-column">
               <p className="link-width">
-                <a href={props.link} alt={props.name} title={props.name} target="_blank">{props.name} &nbsp; <FontAwesomeIcon className="fa-icon" icon={faExternalLink} size="xs"></FontAwesomeIcon> </a>
+                {props.name}
+                {/* <a href={props.link} alt={props.name} title={props.name} target="_blank" rel="noreferrer">{props.name} &nbsp; <FontAwesomeIcon className="fa-icon" icon={faExternalLink} size="xs"></FontAwesomeIcon> </a> */}
               </p>
               <p className="tag is-dark is-medium has-text-white">{props.type}</p>
             </div>
@@ -33,4 +35,4 @@ function Job(props) {
   );
 }
 
-export default Job;
+export default Project;

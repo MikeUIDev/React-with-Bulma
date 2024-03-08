@@ -1,5 +1,4 @@
 import React from "react"
-import Link from "./Link"
 
 function Job(props) {
   return (
@@ -10,7 +9,7 @@ function Job(props) {
         </div>
         <div className="date mb-2">{props.date}</div>
         <p className="role">{props.description}</p>
-{props.children}
+
         {/* <p>{<Link listing="hello" />}</p> */}
         
         {/* <ul className="job-skills">
