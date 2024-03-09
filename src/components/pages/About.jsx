@@ -4,12 +4,14 @@ import {ButtonNeon} from "../Buttons"
 import BackToTop from "../Backtotop";
 
 const first = [
-  'HTML/CSS',
+  'HTML',
+  'CSS',
   'JavaScript',
   'Foundation CSS Framework',
-  'Heroku',
   'npm/node',
   'GitHub/Git',
+  'Heroku',
+  'Contentful',
   'Salesforce Marketing Cloud Email Studio',
   'UX Design',
   'Photoshop',
@@ -17,7 +19,8 @@ const first = [
 ];
 
 const second = [
-  'HTML/CSS',
+  'HTML',
+  'CSS',
   'Figma',
   'Sketch',
   'Photoshop',
@@ -28,9 +31,10 @@ const second = [
   'Prototype'
 ];
 const third = [
-  'HTML/CSS',
+  'HTML',
+  'CSS',
   'JavaScript',
-  'Bootstrap Framework',
+  'Bootstrap CSS Framework',
   'Photoshop',
   'Grunt',
   'Vagrant',
@@ -38,7 +42,8 @@ const third = [
 ];
 
 const fourth = [
-  'HTML/CSS',
+  'HTML',
+  'CSS',
   'JavaScript',
   'Shopify',
   'WordPress',
@@ -71,7 +76,7 @@ function About() {
               </figure>
             </div>
           </div> */}
-  
+
           <section class="section">
             <div class="columns">
               <div class="column is-10 is-offset-1">
@@ -85,39 +90,39 @@ function About() {
                   </div>
 
                   <section id="experience" class="experience columns is-flex-desktop-only">
-                    <aside className="column is-2 is-size-5 has-text-weight-bold">Experience</aside>
+                    <aside className="column is-2 is-size-4 has-text-weight-bold">Experience</aside>
                     <div className="column is-10 jobs">
                       <div className="job">
-                        <Job 
+                        <Job
                           title = "Digital Developer"
                           titleLink = "https://www.espn.com"
                           company = "ESPN"
                           date = "11/2021 - 01/2024"
-                          description = "In charge of creating and updating existing front-facing promotion sites in the ESPN Visual Storytelling team and working closely with the project manager, developer, and cross-functioning team to transform ideas into interactive responsive websites for external clients."
+                          description = "In charge of creating and updating existing front-facing promotion sites in the ESPN Visual Storytelling team and working closely with external clients to create interactive landing pages."
                         />
                         <div className="skills is-flex is-flex-wrap-wrap">
                           {listItemsFirst}
                         </div>
                       </div>
                       <div className="job">
-                        <Job 
+                        <Job
                           title = "Frontend Developer"
                           titleLink = "https://about.meta.com/"
                           company = "Meta"
                           date = "11/2019 - 11/2021"
-                          description = "Led the web team's internal web system under the Communication Creative Department. Working with the team manager, graphic designers, key stakeholders, and project managers to design and transform content ideas into responsive websites compatible with the internal wiki system and XML and JavaScript on our internal stack for external sites."
+                          description = "Led internal web projects that developed user-centered mobile-first single-page applications (SPA) and landing pages."
                         />
                         <div className="skills is-flex is-flex-wrap-wrap">
                           {listItemsSecond}
                         </div>
                       </div>
                       <div className="job">
-                        <Job 
+                        <Job
                           title = "UI Designer"
                           titleLink = "https://www.nolo.com"
                           company = "Internet Brands (Nolo)"
                           date = "04/2011 - 11/2019"
-                          description = "Responsible for the user interface of high-profile customer-facing SaaS websites, including customer self-service web portal & enterprise application for the Sales team. Also, to ensure all web content supports every platform and device, focusing on easy-to-use experiences and aligning with business goals."
+                          description = "Was responsible for creating and updating user interface of high-profile customer-facing SaaS websites, including customer self-service web portal & enterprise application for the Sales team."
                         />
                         <div className="skills is-flex is-flex-wrap-wrap">
                           {listItemsThird}
@@ -127,10 +132,10 @@ function About() {
                   </section>
 
                   <section id="experience" class="experience columns is-flex-desktop-only">
-                    <aside className="column is-2 is-size-5 has-text-weight-bold">Project</aside>
+                    <aside className="column is-2 is-size-4 has-text-weight-bold">Project</aside>
                     <div className="column is-10 jobs">
                       <div className="job">
-                        <Job 
+                        <Job
                           title = "Frontend Developer"
                           titleLink = "https://www.katriscat.com/"
                           company = "Katris"
@@ -144,22 +149,22 @@ function About() {
                     </div>
                   </section>
 
-                  <div class="columns is-centered has-text-centered">
+                  {/* <div class="columns is-centered has-text-centered">
                     <div class="column">
-                      <ButtonNeon 
+                      <ButtonNeon
                         buttonLink = "https://mikelinstudio.com/mike.pdf"
                         buttonName = "Download Resume"
                       />
                     </div>
-                  </div>
+                  </div> */}
 
                 </div>
               </div>
             </div>
           </section>
-  
+
           {/* <div class="is-divider"></div>
-  
+
           <div class="container">
           <nav class="pagination is-centered" role="navigation" aria-label="pagination">
              <a class="button bd-fat-button is-info is-light bd-pagination-prev" href="/user" title="UX Design">
@@ -170,7 +175,7 @@ function About() {
                 <strong>UX Design</strong>
               </span>
             </a>
-  
+
             <a class="button bd-fat-button is-info is-light bd-pagination-prev" href="/contact" title="Contact Me">
               <strong>Contact Me</strong>
               <span class="icon is-left">
@@ -181,7 +186,7 @@ function About() {
             </a>
             </nav>
           </div> */}
-  
+
         </div>
       </div>
       {/* Back to Top button */}

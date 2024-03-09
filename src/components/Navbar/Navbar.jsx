@@ -32,7 +32,7 @@ function Navbar() {
           </span>
         </div>
         <div id="navbarHeader" className="navbar-menu">
-          <div className="navbar-end">
+          <div className="navbar-end has-text-centered">
 
             {/* <a className="navbar-item is-dark is-inverted frontend-developer" href="/developer">
               Frontend Developer
@@ -42,7 +42,7 @@ function Navbar() {
             </a>
             <a className="navbar-item is-dark is-inverted is-rounded about-me" href="/about">
               About Me
-            </a> 
+            </a>
             <div className="navbar-item contact-me">
               <a className="button is-link is-outlined is-rounded text-say-hello is-hidden-mobile" href="contact"></a>
               <a className="button is-link is-outlined is-rounded is-hidden-desktop" href="contact">
@@ -52,7 +52,7 @@ function Navbar() {
 
 
             <NavLink to="/work" className="navbar-item is-dark is-inverted work">Work</NavLink>
-            <NavLink to="/user" className="navbar-item is-dark is-inverted ux-design">UX Design</NavLink>
+            <NavLink to="/user" className="navbar-item is-dark is-inverted design">Design</NavLink>
             <NavLink to="/about" className="navbar-item is-dark is-inverted about-me">About Me</NavLink>
             <div className="navbar-item contact-me">
               <Link to="/contact" className="button is-link is-outlined is-rounded text-say-hello is-hidden-mobile"></Link>

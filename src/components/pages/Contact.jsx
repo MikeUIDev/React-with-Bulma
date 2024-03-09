@@ -1,6 +1,6 @@
 import React from "react";
 import {useState} from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'  
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser, faEnvelope, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
 function Contact() {
@@ -20,7 +20,7 @@ function Contact() {
           <div className="section">
             <div className="columns is-centered has-text-centered">
               <div className="column">
-                <h1 className="title has-text-white has-text-weight-bold is-spaced is-size-3-desktop is-size-3-tablet is-size-4-mobile">
+                <h1 className="title has-text-weight-bold is-spaced is-size-2-desktop is-size-3-tablet is-size-4-mobile">
                   GET IN TOUCH
                 </h1>
               </div>
@@ -77,11 +77,11 @@ function Contact() {
                   </div>
                 </div>
             </div>
-            <div className="columns is-centered has-text-centered mt-6">
+            <div className="columns is-centered has-text-centered mt-4">
               <div className="column is-8">
                 <button className="button custom-neon is-outlined is-rounded is-medium has-text-weight-normal is-fullwidth has-icons-right" type="submit" onClick={handleSubmit}>
-                  Send&nbsp;&nbsp;
-                  <FontAwesomeIcon icon={faPaperPlane} color="white" size="1x"></FontAwesomeIcon>
+                  Send Message&nbsp;&nbsp;
+                  <FontAwesomeIcon icon={faPaperPlane} color="white" size="sm"></FontAwesomeIcon>
                 </button>
               </div>
             </div>

@@ -21,12 +21,12 @@ function Project(props) {
                 {props.name}
                 {/* <a href={props.link} alt={props.name} title={props.name} target="_blank" rel="noreferrer">{props.name} &nbsp; <FontAwesomeIcon className="fa-icon" icon={faExternalLink} size="xs"></FontAwesomeIcon> </a> */}
               </p>
-              <p className="tag is-dark is-medium has-text-white">{props.type}</p>
+              <p className="tag is-dark is-medium">{props.type}</p>
             </div>
             <div className="card-footer-item has-text-left is-flex is-align-items-flex-start is-justify-content-flex-start">
-              <span className="is-small has-text-white">
+              <p className="is-small">
                 {props.description}
-              </span>
+              </p>
             </div>
           </footer>
         </div>

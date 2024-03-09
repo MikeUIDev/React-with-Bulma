@@ -13,11 +13,11 @@ function Footer() {
     //     <p>Build with</p> <img src={logo} className="App-logo logo" /> React  +  <a href="https://www.bulma.io" target="_blank" alt="Bulma CSS framework"><img src={bulmaLogo} className="logo" /></a>
     //   </div>
     //   <div className="year">&#174; {todayDay}</div>
-    // </footer> 
+    // </footer>
 
     <footer className="section footer has-text-centered">
       <div className="container is-narrow">
-        <div className="columns is-centered mb-6"> 
+        <div className="columns is-centered mb-6">
           {/* <div className="column is-one-third">
             <p className="is-size-6-touch has-text-weight-bold has-text-center-mobile has-text-left-tablet has-text-left-desktop">Mike Lin</p>
             <p className="is-size-6-touch has-text-weight-normal has-text-center-mobile has-text-left-tablet has-text-left-desktop">Frontend Developer</p>
@@ -36,14 +36,14 @@ function Footer() {
             <a className="dribbble" href="https://dribbble.com/mikelindesign" target="_blank" rel="noreferrer" alt="Mike Dribbble">
               <FontAwesomeIcon icon="fa-brands fa-dribbble" color="white" size="2x" />
             </a>
-            <a className="email" href="mailto:mlindesign&#64;gmail&#46;com" target="_blank" rel="noreferrer" alt="Mike Email">
+            <a id="myEmail" className="email" href="mailto:mlindesign&#64;gmail&#46;com" target="_blank" rel="noreferrer" alt="Mike Email">
               <FontAwesomeIcon icon={faEnvelope} color="white" size="2x"></FontAwesomeIcon>
             </a>
           </div>
         </div>
         <div className="columns is-flex-desktop-only is-justify-content-center is-align-content-center mb-2">
           <div className="column made-by">
-            <a href="https://bulma.io" target="_blank" rel="noreferrer" alt="Bulma home"><img src={madeWithBulma} alt="Made with Bulma" width="163" height="31"></img></a> 
+            <a href="https://bulma.io" target="_blank" rel="noreferrer" alt="Bulma home"><img src={madeWithBulma} alt="Made with Bulma" width="163" height="31"></img></a>
             +
             <a href="https://react.dev/" target="_blank" rel="noreferrer" alt="React home"><span className="made-by-react"><FontAwesomeIcon icon={['fab', 'react']} color="white" size="2x" /></span></a>
           </div>

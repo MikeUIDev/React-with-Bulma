@@ -1,5 +1,5 @@
 import React from "react";
- 
+
 function Home() {
     return (
         <section className="home hero is-medium is-fullheight">
@@ -19,5 +19,5 @@ function Home() {
         </section>
     );
   }
-  
+
   export default Home;

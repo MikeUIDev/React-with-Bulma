@@ -40,7 +40,7 @@ function User() {
           <div className="section">
             <div className="columns">
               <div className="column is-12">
-                <h1 className="title has-text-white">Case Studies</h1>
+                <h1 className="title">Case Studies</h1>
               </div>
             </div>
             <div className="columns mb-6">
@@ -53,7 +53,7 @@ function User() {
 
             <Tabs>
               <TabList>
-                <Tab>Foodies</Tab>
+                <Tab>Foodie</Tab>
                 <Tab>Travel Buddy</Tab>
               </TabList>
 
@@ -65,23 +65,23 @@ function User() {
                 </div>
                 <div className="columns mb-8">
                   <div className="column is-4 is-offset-1 is-flex is-flex-direction-column">
-                    <span className="is-size-3 mb-4">Foodies</span>
+                    <span className="is-size-3 mb-4 has-text-weight-bold">Foodie</span>
                     <span>Role:</span>
                     <span>Product Designer</span>
                   </div>
                   <div className="column is-6">
-                    <p>Foodies is the final project I worked on during my UX Design bootcamp at General Assembly. It is a restaurant mobile app that search and reserve a table but in addition of that, it also tell the party how long they will have to wait until they are ready to be seated.</p>
+                    <p>Foodie is the final project I worked on during my UX Design bootcamp at General Assembly. It is a restaurant mobile app that search and reserve a table but in addition of that, it also tell the party how long they will have to wait until they are ready to be seated.</p>
                   </div>
                 </div>
                 <div className="columns">
                   <div className="column is-10 is-offset-1">
-                    <h3 className="has-text-white has-text-weight-bold">Problem Statement</h3>
+                    <h3 className="has-text-weight-bold">Problem Statement</h3>
                     <p>Many restaurants are accepting reservations in advance so nobody has to wait. In some other restaurants they adopt the method first come first serve basics. The second methods seems to work well in a less crowded restaurant but it will become a disaster when diners started to flood in.</p>
                   </div>
                 </div>
                 <div className="columns">
                   <div className="column is-8 is-offset-2">
-                    <p className="box has-text-weight-bold is-size-2 is-size-4-mobile big-quote">"The goal is to improve the waiting experience by giving them a real time estimate."</p>
+                    <p className="has-text-weight-bold is-size-2 is-size-4-mobile big-quote">"The goal is to improve the waiting experience by giving them a real time estimate."</p>
                   </div>
                 </div>
                 <Paragraph
@@ -95,7 +95,7 @@ function User() {
                 />
                 <div className="columns mt-4">
                   <div className="column is-10 is-offset-1">
-                    <h3 className="has-text-white has-text-weight-bold">Conceiving</h3>
+                    <h3 className="has-text-weight-bold">Conceiving</h3>
                     <p>Following the goal of my product comes the creation of concepts. I begin finding myself drawing, sketching, and developing the visual flow of the product. This is the bare bone system of my product that will be developed upon throughout the design process. Also, lets not forget the importance of planning where the content is going to be.</p>
                   </div>
                 </div>
@@ -104,25 +104,25 @@ function User() {
                 />
                 <div className="columns mt-4">
                   <div className="column is-10 is-offset-1">
-                    <h3 className="has-text-white has-text-weight-bold">Persona</h3>
+                    <h3 className="has-text-weight-bold">Persona</h3>
                     <img src={foodiesPersona} alt="Foodies Persona" title="Foodies Persona"></img>
                   </div>
                 </div>
                 <div className="columns mt-4">
                   <div className="column is-10 is-offset-1">
-                    <h3 className="has-text-white has-text-weight-bold">Sketching</h3>
+                    <h3 className="has-text-weight-bold">Sketching</h3>
                     <p>Personally, I think this phrase is the most exciting part because I finally get to see what the potential product will be like. There are many ways to sketching out prototypes and I find using this method is the best and fastest way to convey my idea out faster.</p>
                   </div>
                 </div>
                 <div className="columns mt-4">
                   <div className="column is-10 is-offset-1">
-                    <h5 className="has-text-white has-text-weight-bold">Paper Prototype</h5>
+                    <h5 className="has-text-weight-bold">Paper Prototype</h5>
                     <p>The purpose of sketching is to present the functions and flow of the potential finish product. I will go through many different mockups making sure I have the core functions set in stone and not think of any pretty stuff such as colors and images. Colors will be deal with it later.</p>
                   </div>
                 </div>
                 <div className="columns mt-4">
                   <div className="column is-10 is-offset-1">
-                    <h3 className="has-text-white has-text-weight-bold">Prototyping</h3>
+                    <h3 className="has-text-weight-bold">Prototyping</h3>
                     <p>Once I have created skeletal sketches and potential contents on paper prototype, it is time to validate the ideas of how my product is going to work with my end-users. This stage is indeed a very important to make sure all of the features within my product run smoothly and without problems. Of course, if there are problems (which is a good thing) I can always go back to sketching and develop updated version to eliminate that specific problems.</p>
                     <img className="mb-5" src={foodiesDraft} alt="Prototype" title="Prototype"></img>
                     <p>When I first began this project, I have a vision on what this product will look like and how it will work. However, the world doesn't revolve around me and no one thinks alike.</p>
@@ -132,7 +132,7 @@ function User() {
                 </div>
                 <div className="columns mt-4">
                   <div className="column is-10 is-offset-1">
-                    <h5 className="has-text-white has-text-weight-bold">In-person User Testing</h5>
+                    <h5 className="has-text-weight-bold">In-person User Testing</h5>
                     <p>Choosing my target audience requires knowing how my product will react to it. So choosing a specific demographic field is important. I would think user at any ages will be suffice but looking around towns and restaurants, users at their early 20s and through mid 30s would be the most active group. Why? Because they are the most curious group and out exploring new experiences before settling down for child, family or other life changing events.</p>
                     <p>Before I invite users for testing, I prepare a story and several scenarios for user to follow.</p>
                     <p>This can be conducted in two different ways:</p>
@@ -146,12 +146,12 @@ function User() {
                 </div>
                 <div className="columns">
                   <div className="column is-8 is-offset-2">
-                    <p className="box has-text-weight-bold is-size-2 is-size-4-mobile big-quote">"The new and improved version shaved off a few seconds off the clock because of simplier happy path and that is definitely an improvement."</p>
+                    <p className="has-text-weight-bold is-size-2 is-size-4-mobile big-quote">"The new and improved version shaved off a few seconds off the clock because of simplier happy path and that is definitely an improvement."</p>
                   </div>
                 </div>
                 <div className="columns mt-4">
                   <div className="column is-10 is-offset-1">
-                    <h3 className="has-text-white has-text-weight-bold">Building High Fidelity Prototype</h3>
+                    <h3 className="has-text-weight-bold">Building High Fidelity Prototype</h3>
                     <p>This build phrase is where I take all the information and feedback gathered from prototyping and user testing and I start to build the product with design layout. I load up Sketch program and begin to experiment with different kind of layouts, colors, buttons, font sizes, and images.</p>
                     <p>Once the final iteration is done, more testing is necessary. The more feedback I get from testing, the finer my product will be. So it is all about testing, testing, testing. It doesn't just end there when a product is released into the wild. There will be more functionalities to add and bugs fixes later.</p>
                   </div>

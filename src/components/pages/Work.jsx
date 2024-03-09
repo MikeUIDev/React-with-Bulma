@@ -23,7 +23,7 @@ function Work() {
           <div className="section">
             <div className="columns">
               <div className="column is-12">
-                <h1 className="title has-text-white">Work</h1>
+                <h1 className="title">Work</h1>
               </div>
             </div>
             <div className="columns">
