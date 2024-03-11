@@ -33,7 +33,7 @@ function Work() {
                   videoUrl = {NissanVideo}
                   name={<Link listing="Nissan Heisman House" urlLink="https://promo.espn.com/espn/contests/nissan/heisman/2023/index" />}
                   type="Heroku"
-                  description="A promotion campaign associated with the Heisman Trophy, which fans can vote their favorite college football players in the United States."
+                  description="Yearly event from Nissan Heisman House featuring top atheletes to compete for the spot of Heisman Trophy."
                 />
               </div>
               <div className="column is-6">
@@ -42,7 +42,7 @@ function Work() {
                   videoUrl = {AllStateVideo}
                   name={<Link listing="Allstate AFCA Good Works Team" urlLink="https://promo.espn.com/espn/contests/allstate/2023/index" />}
                   type="Heroku"
-                  description="A promotion campaign which fans can vote their favorite college football players in the United States."
+                  description="Allstate is also promoting top athletes for their recognizes of their efforts for community off the field services."
                 />
               </div>
             </div>
@@ -53,7 +53,7 @@ function Work() {
                   videoUrl = {CreativeWorksVideo}
                   name={<Link listing="ESPN CreativeWorks" urlLink="https://showcase.espncreativeworks.com/" />}
                   type="Contentful CMS"
-                  description="A promotion campaign associated with the Heisman Trophy, which fans can vote their favorite college football players in the United States."
+                  description="A resource to develop custom co-branded and client-branded creative across all screens and devices specifically targeted to sports fans and ESPN's audience"
                 />
               </div>
               <div className="column is-6">
@@ -62,7 +62,7 @@ function Work() {
                   videoUrl = {DisneyAsiaVideo}
                   name="Disney Asia Advertising Sales"
                   type="Contentful CMS"
-                  description="Showcase Disney campaigns in an Asia territory."
+                  description="A site that connects Fans with different brands in Asia."
                 />
               </div>
             </div>

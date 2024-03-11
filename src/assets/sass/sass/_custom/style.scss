@@ -129,7 +129,12 @@ a, .button {
 
 .home {
   &.hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://unsplash.it/1200/900?random) no-repeat center center fixed;
+    // background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://unsplash.it/1200/900?random) no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../images/home-g-bg-1200x900.jpg) no-repeat center center fixed;
+    // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../images/home-g-bg-1200x900.jpg);
+    // background-repeat: no-repeat;
+    // background-position: center center;
+    // background-attachment: fixed;
     background-size: cover;
   }
   + footer.footer {
@@ -152,6 +157,7 @@ a, .button {
     video {
       max-height: 413px;
       max-width: 612px;
+      width: 100%;
     }
   }
   .card-footer {
@@ -163,12 +169,6 @@ a, .button {
     > .card-footer-item {
       border: none;
       align-content: flex-start;
-    }
-    .link-width {
-      max-width: 250px;
-    }
-    .text-no-link {
-
     }
     a {
       font-family: 'Roboto Slab', serif;
@@ -280,6 +280,9 @@ a, .button {
   input,
   textarea {
     background-color: #f1f1f1;
+  }
+  .formButton {
+    padding: 0;
   }
 }
 

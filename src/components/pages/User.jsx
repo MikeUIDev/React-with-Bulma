@@ -40,7 +40,7 @@ function User() {
           <div className="section">
             <div className="columns">
               <div className="column is-12">
-                <h1 className="title">Case Studies</h1>
+                <h1 className="title">Design</h1>
               </div>
             </div>
             <div className="columns mb-6">
@@ -161,6 +161,7 @@ function User() {
                     <ButtonNeon
                       buttonLink = "https://mikelinstudio.com/case-study/Foodie-Mike-Lin-UserCase.pdf"
                       buttonName = "Download Case Study"
+                      target="_blank"
                     />
                   </div>
                 </div>
