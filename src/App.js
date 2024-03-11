@@ -1,15 +1,15 @@
 import React from 'react'
+// import { HashRouter as Router, Routes, Route, } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route, } from "react-router-dom";
+import { MemoryRouter as Router, Routes, Route, } from "react-router-dom";
+
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Navbar/Footer";
-import {
-    HashRouter as Router,
-    Routes,
-    Route,
-} from "react-router-dom";
+
 import Home from "./components/pages/Index";
 import Work from "./components/pages/Work";
 import User from "./components/pages/User";

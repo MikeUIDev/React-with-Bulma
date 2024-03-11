@@ -80,7 +80,9 @@ a, .button {
 }
 
 .navbar-menu {
-  background-color: var(--bg);
+  &.is-active {
+    background-color: var(--bg);
+  }
   .navbar-item {
     font-family: "Open Sans", helvetica, arial, serif;
     font-size: 1.25rem;
