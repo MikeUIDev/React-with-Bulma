@@ -167,15 +167,15 @@ function User() {
                 </div>
                 <div className="columns mt-4">
                   <div className="column is-10 is-offset-1 is-flex is-flex-wrap-wrap is-justify-content-start is-align-items-start">
-                    <img className="mb-5 mr-4" src={foodiesHifi01} alt="High Fidelity" title="High Fidelity"></img>
-                    <img className="mb-5 mr-4" src={foodiesHifi02} alt="High Fidelity" title="High Fidelity"></img>
-                    <img className="mb-5 mr-4" src={foodiesHifi03} alt="High Fidelity" title="High Fidelity"></img>
-                    <img className="mb-5 mr-4" src={foodiesHifi04} alt="High Fidelity" title="High Fidelity"></img>
-                    <img className="mb-5 mr-4" src={foodiesHifi05} alt="High Fidelity" title="High Fidelity"></img>
-                    <img className="mb-5 mr-4" src={foodiesHifi06} alt="High Fidelity" title="High Fidelity"></img>
-                    <img className="mb-5 mr-4" src={foodiesHifi07} alt="High Fidelity" title="High Fidelity"></img>
-                    <img className="mb-5 mr-4" src={foodiesHifi08} alt="High Fidelity" title="High Fidelity"></img>
-                    <img className="mb-5 mr-4" src={foodiesHifi09} alt="High Fidelity" title="High Fidelity"></img>
+                    <img className="mb-5 mr-4" src={foodiesHifi01} alt="High Fidelity" title="High Fidelity" />
+                    <img className="mb-5 mr-4" src={foodiesHifi02} alt="High Fidelity" title="High Fidelity" />
+                    <img className="mb-5 mr-4" src={foodiesHifi03} alt="High Fidelity" title="High Fidelity" />
+                    <img className="mb-5 mr-4" src={foodiesHifi04} alt="High Fidelity" title="High Fidelity" />
+                    <img className="mb-5 mr-4" src={foodiesHifi05} alt="High Fidelity" title="High Fidelity" />
+                    <img className="mb-5 mr-4" src={foodiesHifi06} alt="High Fidelity" title="High Fidelity" />
+                    <img className="mb-5 mr-4" src={foodiesHifi07} alt="High Fidelity" title="High Fidelity" />
+                    <img className="mb-5 mr-4" src={foodiesHifi08} alt="High Fidelity" title="High Fidelity" />
+                    <img className="mb-5 mr-4" src={foodiesHifi09} alt="High Fidelity" title="High Fidelity" />
                   </div>
                 </div>
               </TabPanel>

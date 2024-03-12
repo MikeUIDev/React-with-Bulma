@@ -178,6 +178,17 @@ a, .button {
       }
     }
   }
+  .video-player {
+      max-height: 413px;
+      max-width: 612px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .react-player__shadow {
+        background: radial-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 100%) !important;
+      }
+  }
 }
 
 /* User */

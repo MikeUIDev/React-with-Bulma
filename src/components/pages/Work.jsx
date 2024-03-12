@@ -42,7 +42,7 @@ function Work() {
                   videoUrl = {AllStateVideo}
                   name={<Link listing="Allstate AFCA Good Works Team" urlLink="https://promo.espn.com/espn/contests/allstate/2023/index" />}
                   type="Heroku"
-                  description="Allstate is also promoting top athletes for their recognizes of their efforts for community off the field services."
+                  description="Allstate promos top athletes for their recognizes of their efforts for community off the field services."
                 />
               </div>
             </div>

@@ -1,20 +1,20 @@
 import React from "react"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faExternalLink } from '@fortawesome/free-solid-svg-icons'
-import Link from "./Link";
-
+import ReactPlayer from "react-player/lazy";
 
 function Project(props) {
   return (
     <div className="columns content is-medium mb-6">
       <div className="column is-12">
         <div className="card">
-          <div className="card-image">
+          <div className="card-image video-player">
+            <ReactPlayer url={props.videoUrl} light={props.videoPoster} controls={true} width="612px" height="413px" />
+          </div>
+          {/* <div className="card-image">
             <video loading="lazy" playsInline muted controls className="video" poster={props.videoPoster} width="612" height="413">
               <source type="video/mp4" src={props.videoUrl}></source>
             </video>
-              {/* <img src={props.img} alt={props.name} title={props.name}></img> */}
-          </div>
+              <img src={props.img} alt={props.name} title={props.name}></img>
+          </div> */}
           <footer className="card-footer mt-4">
             <div className="card-footer-item mb-0 is-flex is-align-items-flex-start is-justify-content-flex-start is-flex-direction-column">
               <p className="link-width">

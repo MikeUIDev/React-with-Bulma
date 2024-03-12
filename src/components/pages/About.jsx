@@ -1,6 +1,6 @@
 import React from "react";
 import Job from "../Job";
-import {ButtonNeon} from "../Buttons"
+// import {ButtonNeon} from "../Buttons"
 import BackToTop from "../Backtotop";
 
 const first = [
