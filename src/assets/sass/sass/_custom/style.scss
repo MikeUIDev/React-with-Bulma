@@ -17,6 +17,10 @@ h1,h2,h3,h4,h5,h6,
   color: var(--white);
 }
 
+.content h1.title {
+  font-size: 4rem;
+}
+
 p {
   color: var(--white);
   font-family: Lato, Helvetica, arial;
@@ -216,9 +220,6 @@ a, .button {
     &__tab-panel {
       margin-top: 3rem;
     }
-    &__tab-panel--selected {
-
-    }
   }
   .big-quote {
     margin: 40px 0;
@@ -229,6 +230,10 @@ a, .button {
       padding: 50px;
     }
   }
+}
+
+#thank-you-message {
+
 }
 
 .top-to-btm {

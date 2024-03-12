@@ -66,7 +66,7 @@ const listItemsFourth = fourth.map(skill =>
 
 function About() {
   return (
-    <section class="about hero content is-medium is-fullheight-with-navbar">
+    <section class="about hero content is-large is-fullheight-with-navbar">
       <div class="page-body">
         <div class="container">
           {/* <div class="columns">
@@ -78,15 +78,22 @@ function About() {
           </div> */}
 
           <section class="section">
+            <div className="columns">
+              <div className="column is-12">
+                <h1 className="title">About</h1>
+              </div>
+            </div>
             <div class="columns">
-              <div class="column is-10 is-offset-1">
+              <div class="column is-12">
                 <div class="content is-large">
                   <div class="mb-8">
-                    <h2>Frontend Developer</h2>
-                    <p className="mb-6">I help company build and optimize interactive websites, and promo specific events via Email Marketing tool. I work across developing interactive elements using frontend languages and apply modern visual design best practices. I believe the end product should give everyone a delightful and an unforgettable experiences.</p>
-                    <h2>What am I doing now?</h2>
-                    <p>Further improving vanilla JavaScript while learning React, Next.js and Tailwind CSS Framework to integrate into website building. Furthermore, staying up-to-date on User Experience and Visual Design best practices.</p>
-                    <p>Currently, I am looking for on-site, hybrid, or remote Full-Time (ideally) or Contract position that focuses as a hybrid role where I get to develop and design as well.</p>
+                    <p className="is-size-2 has-text-weight-bold">Hey, I'm Mike. Nice to meet you.</p>
+                    <p className="is-size-3 has-text-weight-bold">I have been a Frontend Developer for over 10 years. I specialize in crafting website interfaces and aligning business objectives with user needs. My passion lies in tackling diverse challenges in the dynamic design landscape.</p>
+
+                    <p>My current focus revolves on improving many of frontend development tech stacks such as and not limited to JavaScript, React, Next.js, Jest, and Selenium. Also, taking a further on learning different type of CSS framework such as Bulma and Tailwind CSS. On the creative side of me, continuously enhance the visual and functional aspects of product user interfaces and experiences with a focus on strategy, vision, research, and advisory.</p>
+                    <p></p>
+
+                    <p>Currently, I am looking for on-site, hybrid, or remote Full-Time or Contract position that focuses as a hybrid role where I get to develop and design as well.</p>
                   </div>
 
                   <section id="experience" class="experience columns is-flex-desktop-only">
