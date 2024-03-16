@@ -1,4 +1,6 @@
 import React from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 import { NavLink } from "react-router-dom";
 
@@ -11,6 +13,8 @@ function Navbar() {
             <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"></img>
           </a> */}
           <Link exact to="/" className="navbar-item has-text-weight-bold home">Mike Lin</Link>
+          <p className="navbar-item has-text-weight-bold home"><FontAwesomeIcon icon={faArrowRight} color="white" size="md"></FontAwesomeIcon></p>
+          <p className="has-text-weight-bold dev-title">Frontend Developer</p>
           <span
             role="button"
             className="navbar-burger burger"

@@ -51,17 +51,17 @@ const fourth = [
 ];
 
 const listItemsFirst = first.map(skill =>
-  <div class="control"><span class="tag is-dark is-medium">{skill}</span></div>
+  <div class="control"><span class="tag is-neon is-medium">{skill}</span></div>
 )
 const listItemsSecond = second.map(skill =>
-  <div class="control"><span class="tag is-dark is-medium">{skill}</span></div>
+  <div class="control"><span class="tag is-neon is-medium">{skill}</span></div>
 )
 const listItemsThird = third.map(skill =>
-  <div class="control"><span class="tag is-dark is-medium">{skill}</span></div>
+  <div class="control"><span class="tag is-neon is-medium">{skill}</span></div>
 )
 
 const listItemsFourth = fourth.map(skill =>
-  <div class="control"><span class="tag is-dark is-medium">{skill}</span></div>
+  <div class="control"><span class="tag is-neon is-medium">{skill}</span></div>
 )
 
 function About() {
@@ -85,26 +85,26 @@ function About() {
             </div>
             <div class="columns">
               <div class="column is-12">
-                <div class="content is-large">
+                <div class="content is-medium">
                   <div class="mb-8">
-                    <p className="is-size-2 has-text-weight-bold">Hey, I'm Mike. Nice to meet you.</p>
-                    <p className="is-size-3 has-text-weight-bold">I have been a Frontend Developer for over 10 years. I specialize in crafting website interfaces and aligning business objectives with user needs. My passion lies in tackling diverse challenges in the dynamic design landscape.</p>
-
-                    <p>My current focus revolves on improving many of frontend development tech stacks such as and not limited to JavaScript, React, Next.js, Jest, and Selenium. Also, taking a further on learning different type of CSS framework such as Bulma and Tailwind CSS. On the creative side of me, continuously enhance the visual and functional aspects of product user interfaces and experiences with a focus on strategy, vision, research, and advisory.</p>
-                    <p></p>
-
-                    <p>Currently, I am looking for on-site, hybrid, or remote Full-Time or Contract position that focuses as a hybrid role where I get to develop and design as well.</p>
+                    <p className="is-size-3 has-text-weight-bold">Hey, I'm Mike. Nice to meet you.</p>
+                    <p className="is-size-4 has-text-weight-bold">A Frontend Developer with over 10 years of experience. I specialize in crafting website interfaces and aligning business objectives with user needs. I actively continue to seek challenges in a dynamic design enviornment.</p>
+                    <p>My current focus revolves improving frontend development tech stacks such as and not limited to JavaScript, React, Next.js, RESTful and APIs Services, testing framework Jest and learning different type of CSS framework Bulma and Tailwind CSS.</p>
+                    <p>On the creative side of me, it is important to enhance the visual and functional aspects of product user interfaces and focus on optimizing user experiences between humans and products.</p>
+                    <p className="has-text-weight-bold">To be able to code and design well, is an unicorn of development world. Collaboration between designers and developers is paramount and if a Frontend Developer possess UX/UI design expertise, inter-team communication becomes seamless.</p>
+                    <p>I am a person-oriented individual who are motivated by helping others. Knowing what I do that contribute others positively derive satisfaction to me. Most important of all, the key to successful communication is to empathize with others and tailor my message to resonate with their specific needs and desires.</p>
+                    <p>Currently, I am actively looking for on-site, hybrid, or remote Full-Time or Contract position that focuses as a hybrid role where I get to develop and design as well.</p>
                   </div>
-
+                  <h2 className="mb-6">Jobs</h2>
                   <section id="experience" class="experience columns is-flex-desktop-only">
-                    <aside className="column is-2 is-size-4 has-text-weight-bold">Experience</aside>
+                    <aside className="column is-2 is-size-5 has-text-weight-bold left-text">Experience</aside>
                     <div className="column is-10 jobs">
                       <div className="job">
                         <Job
                           title = "Digital Developer"
                           titleLink = "https://www.espn.com"
                           company = "ESPN"
-                          date = "11/2021 - 01/2024"
+                          date = "2021 - 2024"
                           description = "In charge of creating and updating existing front-facing promotion sites in the ESPN Visual Storytelling team and working closely with external clients to create interactive landing pages."
                         />
                         <div className="skills is-flex is-flex-wrap-wrap">
@@ -116,7 +116,7 @@ function About() {
                           title = "Frontend Developer"
                           titleLink = "https://about.meta.com/"
                           company = "Meta"
-                          date = "11/2019 - 11/2021"
+                          date = "2019 - 2021"
                           description = "Led internal web projects that developed user-centered mobile-first single-page applications (SPA) and landing pages."
                         />
                         <div className="skills is-flex is-flex-wrap-wrap">
@@ -128,7 +128,7 @@ function About() {
                           title = "UI Designer"
                           titleLink = "https://www.nolo.com"
                           company = "Internet Brands (Nolo)"
-                          date = "04/2011 - 11/2019"
+                          date = "2011 - 2019"
                           description = "Was responsible for creating and updating user interface of high-profile customer-facing SaaS websites, including customer self-service web portal & enterprise application for the Sales team."
                         />
                         <div className="skills is-flex is-flex-wrap-wrap">
@@ -139,14 +139,14 @@ function About() {
                   </section>
 
                   <section id="experience" class="experience columns is-flex-desktop-only">
-                    <aside className="column is-2 is-size-4 has-text-weight-bold">Project</aside>
+                    <aside className="column is-2 is-size-5 has-text-weight-bold left-text">Project</aside>
                     <div className="column is-10 jobs">
                       <div className="job">
                         <Job
                           title = "Frontend Developer"
                           titleLink = "https://www.katriscat.com/"
                           company = "Katris"
-                          date = "06/2016 - 06/2017"
+                          date = "2016 - 2017"
                           description = "Implemented new WordPress site from start to final product and continually maintaining the site with new features."
                         />
                         <div className="skills is-flex is-flex-wrap-wrap">

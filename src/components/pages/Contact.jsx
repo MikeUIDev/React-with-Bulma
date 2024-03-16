@@ -46,7 +46,7 @@ function Contact() {
                   <h1 className="title has-text-weight-bold is-spaced is-size-2-desktop is-size-3-tablet is-size-4-mobile">
                     GET IN TOUCH
                   </h1>
-                  <p className="is-size-4 mt-6">Feel free to reach out regarding to job opportunities, project, or just say hello.</p>
+                  <p className="is-size-4 mt-6">Feel free to reach out regarding to job opportunity, project, or just say hello.</p>
                 </div>
               </div>
               <div className="columns is-centered has-text-centered mt-4">

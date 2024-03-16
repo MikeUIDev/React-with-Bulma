@@ -36,7 +36,7 @@ function Footer() {
             <a className="dribbble" href="https://dribbble.com/mikelindesign" target="_blank" rel="noreferrer" alt="Mike Dribbble">
               <FontAwesomeIcon icon="fa-brands fa-dribbble" color="white" size="2x" />
             </a>
-            <a id="myEmail" className="email" href="mailto:mlindesign&#64;gmail&#46;com" target="_blank" rel="noreferrer" alt="Mike Email">
+            <a id="myEmail" className="email" href="mailto:mike&#64;mikelinstudio&#46;com" target="_blank" rel="noreferrer" alt="Mike Email">
               <FontAwesomeIcon icon={faEnvelope} color="white" size="2x"></FontAwesomeIcon>
             </a>
           </div>

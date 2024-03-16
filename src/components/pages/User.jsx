@@ -1,4 +1,5 @@
 import React from "react";
+
 import foodieCaseStudy from "../../assets/images/foodies-hero.jpg";
 import travelBuddyCaseStudy from "../../assets/images/travel-buddy-hero.jpg";
 import Paragraph from "../Paragraph";
@@ -17,6 +18,19 @@ import foodiesHifi06 from "../../assets/images/foodies-hi-fi-prototype-06.jpg"
 import foodiesHifi07 from "../../assets/images/foodies-hi-fi-prototype-07.jpg"
 import foodiesHifi08 from "../../assets/images/foodies-hi-fi-prototype-08.jpg"
 import foodiesHifi09 from "../../assets/images/foodies-hi-fi-prototype-09.jpg"
+
+import travelBuddyExpedia from "../../assets/images/travel-expedia-logo.svg"
+import travelBuddyTripAdvisor from "../../assets/images/travel-trip-advisor-logo.svg"
+import travelBuddy01 from "../../assets/images/travel-interview.jpg"
+import travelBuddy02 from "../../assets/images/travel-buddy-persona.jpg"
+import travelBuddy03 from "../../assets/images/travel-buddy-japan.jpg"
+import travelBuddy04 from "../../assets/images/travel-buddy-ecuador.jpg"
+import travelBuddy05 from "../../assets/images/travel-buddy-user-flow.jpg"
+import travelBuddy06 from "../../assets/images/travel-buddy-wireframe.jpg"
+import travelBuddy07 from "../../assets/images/travel-app-experiment.jpg"
+import travelBuddy08 from "../../assets/images/travel-app-experiment-02.jpg"
+
+import designSystems from "../../assets/images/Meta_Wiki_Design_System-Mike_Lin.jpg"
 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
@@ -45,12 +59,20 @@ function User() {
             </div>
             <div className="columns mb-6">
               <div className="column">
-                <p>
-                  These were couple case studies I did for the User Experience Design bootcamp I attended at General Assembly.
-                </p>
+                <h2 className="mb-6">Visual Design</h2>
+                <p>Meta landing page design systems</p>
+                <img className="mb-6" src={designSystems} alt="Meta Design Systems" title="Meta Design Systems" />
+
+
               </div>
             </div>
 
+            <div className="columns mb-6">
+              <div className="column">
+                <h2 className="mb-6">UX Case Studies</h2>
+                <p>These were couple case studies I did for the User Experience Design bootcamp I attended at General Assembly.</p>
+              </div>
+            </div>
             <Tabs>
               <TabList>
                 <Tab>Foodie</Tab>
@@ -186,15 +208,91 @@ function User() {
                       <img className="mb-6" src={travelBuddyCaseStudy} alt="Travel Buddy Cases Study" title="Travel Buddy Case Study"></img>
                     </div>
                   </div>
-                  <div className="columns">
+                  <div className="columns mb-8">
                   <div className="column is-4 is-offset-1 is-flex is-flex-direction-column">
-                    <span className="is-size-3 mb-4">Travel Buddy</span>
+                    <span className="is-size-3 mb-4 has-text-weight-bold">Travel Buddy</span>
                     <span>Role:</span>
                     <span>Product Designer</span>
                   </div>
                     <div className="column is-6">
-                      <p>Travel Buddy is an concept mobile app that I created while in the process of making my bootcamp project Foodies. This app is to inform travelers all nearby attractions and how to get to their destinations by using public transportations. It also shows you the travel time and different routes you can take.</p>
+                      <p>Travel Buddy is an concept mobile app that I created while in the process of making my bootcamp project Foodie. This app is to inform travelers all nearby attractions and how to get to their destinations by using public transportations. It also shows you the travel time and different routes you can take.</p>
                     </div>
+                </div>
+                <div className="columns">
+                  <div className="column is-10 is-offset-1">
+                    <h3 className="has-text-weight-bold">Problem Statement</h3>
+                    <p>This app hope to inform people all nearby attractions such as restaurants, activities, public transportations and also the schedule of public transportation.</p>
+                  </div>
+                </div>
+                <div className="columns mt-4">
+                  <div className="column is-10 is-offset-1">
+                    <h3 className="has-text-weight-bold">The Challenge</h3>
+                    <p>To make their trips easier for travelers to find everything they need in an easy-to-navigate app. Even non-tech savvy can operate it.</p>
+                  </div>
+                </div>
+                <div className="columns mt-4">
+                  <div className="column is-10 is-offset-1">
+                    <h3 className="has-text-weight-bold">Competitors</h3>
+                  </div>
+                </div>
+                <div className="columns has-background-light pt-4 pb-4">
+                  <div className="column is-5 is-offset-1 mr-6">
+                    <img className="" style={{width: '100%'}} src={travelBuddyExpedia} alt="Expedia" title="Expedia"></img>
+                  </div>
+                  <div className="column is-5">
+                    <img className="" src={travelBuddyTripAdvisor} alt="Trip Advisor" title="Trip Advisor"></img>
+                  </div>
+                </div>
+                <div className="columns mt-4">
+                  <div className="column is-10 is-offset-1">
+                    <h3 className="has-text-weight-bold">Ideas</h3>
+                    <p>My initial objective was to how to improve the experience of booking a travel from planning and researching, reserving and finding a great deal, and the actual experience of traveling.</p>
+                  </div>
+                </div>
+                <div className="columns mt-4">
+                  <div className="column is-10 is-offset-1">
+                    <h5 className="has-text-weight-bold">Hypotheses</h5>
+                    <p>Go on a vacation is probably the only thing that no one hates. It is a great way to explore new adventure and the best of all to get rid of stress and negative thoughts about life. However, booking an entire trip takes time and time a lot of people don't have.</p>
+                    <img className="mb-5" src={travelBuddy01} alt="Travel Interview" title="Travel Interview"></img>
+                    <h5 className="has-text-weight-bold">Methods</h5>
+                    <p>I conducted interviews with travelers and survey what kind of people use what kind of services more. For examples, people who are savvy about computer tend to use online reservation for all their needs. On the contrary, older people and maybe family tend to use other methods such as travel agency to help them book vacation. </p>
+                    <p>Also, what steps are need it to take in order to bring in more travelers during busy and off season. Summer is the busiest season and prices usually go up.</p>
+                    <img className="mb-5" src={travelBuddy02} alt="Persona" title="Persona"></img>
+                    <h5 className="has-text-weight-bold">Conduct</h5>
+                    <p>During one weekend I went to a Travel & Adventure Trade show down in Santa Clara Convention Center, where many travel agency and tourist attraction companies gathered there to show off deals and information.</p>
+                    <p>For interviewees, I asked them questions about what they do, why are they here today, and who are you trying to help. All of them said they were here because they wanted to promote their products to bring more customers to buy their products. Funny thing was the majority of the customers here were middle-aged to seniors. I asked them why and they said online booking takes too much of their time and some of them said they didn't really know how to use the computer.</p>
+                  </div>
+                </div>
+                <div className="columns mt-4">
+                  <div className="column is-10 is-offset-1">
+                    <h3 className="has-text-weight-bold">Competitive Analysis</h3>
+                    <p>Why does competitor exist? Competition is what driven the whole economy forward. The need to be better than the others, and it is the backbone of every economic and power. However, one thing for sure is that each competitor’s main goal is to solve the problems what customers are having. There is no one competitor better than other. They are focusing on the area where they are the strongest.</p>
+                  </div>
+                </div>
+                <div className="columns mt-4">
+                  <div className="column is-5 is-offset-1">
+                    <img className="mb-5" src={travelBuddy03} alt="Japan" title="Japan"></img>
+                  </div>
+                  <div className="column is-5">
+                    <img className="mb-5" src={travelBuddy04} alt="Ecuador" title="Ecuador"></img>
+                  </div>
+                </div>
+                <div className="columns mt-4">
+                  <div className="column is-10 is-offset-1">
+                    <p>Take above two images for examples, Ecuador and Japan. Obviously, both are in the same market as tourist attractions but promoting different countries. They are competitors but for different regions of the world. They are both doing well promoting their own countries by showing customers what the country looks like at first glance. If customers find them interesting, they will go talk to them. They accomplished their goal by being here. More customers equal more money.</p>
+                  </div>
+                </div>
+                <div className="columns mt-4">
+                  <div className="column is-10 is-offset-1">
+                    <h3 className="has-text-weight-bold">Sitemap and User Flow</h3>
+                    <img className="mb-5" src={travelBuddy05} alt="User Flow" title="User Flow"></img>
+                    <h3 className="has-text-weight-bold">Low Fidelity Wireframes</h3>
+                    <p>As usual, paper prototype is my go to guy to design a low fidelity prototype. Paper prototype is also much easier to fix right away.</p>
+                    <img className="mb-5" src={travelBuddy06} alt="Wireframe" title="Wireframe"></img>
+                    <h3 className="has-text-weight-bold">High Fidelity Prototypes</h3>
+                    <img className="mb-5" src={travelBuddy07} alt="High Fidelity" title="High Fidelity"></img>
+                    <img className="mb-5" src={travelBuddy08} alt="High Fidelity 2" title="High Fidelity 2"></img>
+                  </div>
                 </div>
               </TabPanel>
             </Tabs>
