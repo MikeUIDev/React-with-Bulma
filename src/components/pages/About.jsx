@@ -66,7 +66,7 @@ const listItemsFourth = fourth.map(skill =>
 
 function About() {
   return (
-    <section class="about hero content is-large is-fullheight-with-navbar">
+    <section aria-label="About me section" class="about hero content is-large is-fullheight-with-navbar">
       <div class="page-body">
         <div class="container">
           {/* <div class="columns">
@@ -93,12 +93,11 @@ function About() {
                     <p>On the creative side of me, it is important to enhance the visual and functional aspects of product user interfaces and focus on optimizing user experiences between humans and products.</p>
                     <p className="has-text-weight-bold">To be able to code and design well, is an unicorn of development world. Collaboration between designers and developers is paramount and if a Frontend Developer possess UX/UI design expertise, inter-team communication becomes seamless.</p>
                     <p>I am a person-oriented individual who are motivated by helping others. Knowing what I do that contribute others positively derive satisfaction to me. Most important of all, the key to successful communication is to empathize with others and tailor my message to resonate with their specific needs and desires.</p>
-                    <p>Currently, I am actively looking for on-site, hybrid, or remote Full-Time or Contract position that focuses as a hybrid role where I get to develop and design as well.</p>
                   </div>
                   <h2 className="mb-6">Jobs</h2>
                   <section id="experience" class="experience columns is-flex-desktop-only">
                     <aside className="column is-2 is-size-5 has-text-weight-bold left-text">Experience</aside>
-                    <div className="column is-10 jobs">
+                    <div className="column is-7 jobs">
                       <div className="job">
                         <Job
                           title = "Digital Developer"
@@ -136,6 +135,34 @@ function About() {
                         </div>
                       </div>
                     </div>
+                    <aside className="column is-2 is-offset-1 is-size-5 has-text-weight-bold right-text">
+                      <div className="columns">
+                        <div className="column is-12 content is-normal">
+                          <p className="is-size-5 has-text-weight-bold">Skills</p>
+                          <p className="is-size-6 has-text-weight-bold">Frontend</p>
+                          <ul className="skill-listings">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Sass</li>
+                            <li>Bootstrap & Bulma CSS</li>
+                            <li>React</li>
+                            <li>Git / GitHub</li>
+                            <li>WordPress</li>
+                            <li>Contentful</li>
+                          </ul>
+                          <p className="is-size-6 has-text-weight-bold">UX</p>
+                          <ul className="skill-listings">
+                            <li>Figma</li>
+                            <li>Design Systems</li>
+                            <li>Resarching</li>
+                            <li>Wireframing</li>
+                            <li>Prototyping</li>
+                            <li>Fidelity</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </aside>
                   </section>
 
                   <section id="experience" class="experience columns is-flex-desktop-only">

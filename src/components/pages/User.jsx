@@ -39,7 +39,7 @@ import BackToTop from "../Backtotop";
 
 function User() {
   return (
-    <section className="user hero content is-large is-fullheight-with-navbar">
+    <section aria-label="User Experience Design section" className="user hero content is-large is-fullheight-with-navbar">
       {/* <div class="hero-body">
         <p class="title">
           Hero title

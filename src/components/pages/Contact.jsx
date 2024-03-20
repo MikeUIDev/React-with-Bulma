@@ -36,7 +36,7 @@ function Contact() {
   };
 
   return (
-    <section className="contact hero content is-medium is-fullheight-with-navbar">
+    <section aria-label="Contact me section" className="contact hero content is-medium is-fullheight-with-navbar">
       <div className="page-body">
         <div className="container">
           <div className="section">
@@ -46,7 +46,7 @@ function Contact() {
                   <h1 className="title has-text-weight-bold is-spaced is-size-2-desktop is-size-3-tablet is-size-4-mobile">
                     GET IN TOUCH
                   </h1>
-                  <p className="is-size-4 mt-6">Feel free to reach out regarding to job opportunity, project, or just say hello.</p>
+                  <p className="is-size-3 mt-4">Feel free to reach out regarding to job opportunity, project, or just say hello.</p>
                 </div>
               </div>
               <div className="columns is-centered has-text-centered mt-4">
@@ -68,7 +68,7 @@ function Contact() {
                         }}
                         required />
                       <span className="icon is-small is-left">
-                        <FontAwesomeIcon icon={faUser} color="#06191D" size="1x"></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faUser} color="white" size="1x"></FontAwesomeIcon>
                       </span>
                     </div>
                   </div>
@@ -86,7 +86,7 @@ function Contact() {
                         }}
                         required />
                       <span className="icon is-small is-left">
-                        <FontAwesomeIcon icon={faEnvelope} color="#06191D" size="1x"></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faEnvelope} color="#white" size="1x"></FontAwesomeIcon>
                       </span>
                     </div>
                   </div>
@@ -97,7 +97,7 @@ function Contact() {
                     <div className="field">
                       <label className="label is-medium has-text-left has-text-weight-normal">Message </label>
                       <div className="control">
-                        <textarea rows="8" cols="50" type="text" placeholder="Type your message here" name="message" className="textarea is-medium has-text-black" value={state.message}
+                        <textarea rows="8" cols="50" type="text" placeholder="Type your message here" name="message" className="textarea is-medium" value={state.message}
                           onChange={ev => {
                               setState({
                               ...state,

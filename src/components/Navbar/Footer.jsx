@@ -26,18 +26,18 @@ function Footer() {
             <p className="is-size-6-touch has-text-weight-bold text-center-mobile has-text-left-tablet has-text-left-desktop">Contact</p>
             <p className="is-size-6-touch has-text-weight-normal text-center-mobile has-text-left-tablet has-text-left-desktop">mlindesign&#64;gmail&#46;com</p>
           </div> */}
-          <div className="column social-icons is-one-third is-flex is-justify-content-space-evenly">
+          <div className="column social-icons is-one-quarter is-flex is-justify-content-space-evenly">
             <a className="linkedin" href="https://www.linkedin.com/in/mikelindesign/" target="_blank" rel="noreferrer" alt="Mike LinkedIn">
-              <FontAwesomeIcon icon={['fab', 'linkedin']} color="white" size="2x" />
+              <FontAwesomeIcon icon={['fab', 'linkedin']} color="rgba(246, 242, 229, 0.8)" size="2x" />
             </a>
             <a className="github" href="https://github.com/MikeUIDev" target="_blank" rel="noreferrer" alt="Mike GitHub">
-              <FontAwesomeIcon icon={['fab', 'github']} color="white" size="2x" />
+              <FontAwesomeIcon icon={['fab', 'github']} color="rgba(246, 242, 229, 0.8)" size="2x" />
             </a>
             <a className="dribbble" href="https://dribbble.com/mikelindesign" target="_blank" rel="noreferrer" alt="Mike Dribbble">
-              <FontAwesomeIcon icon="fa-brands fa-dribbble" color="white" size="2x" />
+              <FontAwesomeIcon icon="fa-brands fa-dribbble" color="rgba(246, 242, 229, 0.8)" size="2x" />
             </a>
             <a id="myEmail" className="email" href="mailto:mike&#64;mikelinstudio&#46;com" target="_blank" rel="noreferrer" alt="Mike Email">
-              <FontAwesomeIcon icon={faEnvelope} color="white" size="2x"></FontAwesomeIcon>
+              <FontAwesomeIcon icon={faEnvelope} color="rgba(246, 242, 229, 0.8)" size="2x"></FontAwesomeIcon>
             </a>
           </div>
         </div>

@@ -2,8 +2,8 @@
   ::-webkit-scrollbar{height:10px;width:10px}::-webkit-scrollbar-track{background:#efefef;border-radius:6px}::-webkit-scrollbar-thumb{background:#d5d5d5;border-radius:6px}::-webkit-scrollbar-thumb:hover{background:#c4c4c4}
   --neon: rgba(0, 197, 200, 1);
   --neon-bg: rgba(0, 197, 200, 0.1);
-  --white: #f6f2e5;
-  --white2: #f1f1f1;
+  --white: rgba(246, 242, 229, 1);
+  --white2: rgba(241, 241, 241, 1);
   --bg: rgba(6, 25, 29, 1);
   --bg-hover: rgba(10, 44, 50, 0.5);
 }
@@ -12,6 +12,9 @@ body {
   font-family: 'Open Sans', Helvetica, arial;
   background-color: var(--bg);
   color: var(--white);
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 h1,h2,h3,h4,h5,h6,
@@ -64,9 +67,14 @@ a, .button {
   }
 }
 
+.tag.is-neon {
+  color: var(--neon);
+  background-color: var(--neon-bg);
+}
+
 .navbar {
   background-color: rgba(6, 25, 29, 0.15);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(4px);
 }
 
 .navbar-brand {
@@ -160,6 +168,32 @@ a, .button {
 //   top: -60px;
 // }
 
+.hero {
+  .page-body {
+    z-index: 10;
+  }
+  // &:before {
+  //   background: linear-gradient(currentcolor 1px, transparent 1px) 0% 0% / 80px 80px, linear-gradient(to right, currentcolor 1px, transparent 1px) transparent;
+  //   transition: all 0.5s linear 0s;
+  //   content: "";
+  //   z-index: 0;
+  //   height: 100vh;
+  //   width: 100vw;
+  //   color: rgba(246, 242, 229, 0.03);
+  //   position: fixed;
+  // }
+  &:after {
+    background-image: radial-gradient(at 40% 45%, rgb(0, 197, 200, 0.15), transparent 80%);
+    position: fixed;
+    content: "";
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(100px) saturate(100%);
+    top: 0px;
+  }
+}
+
 .home {
   &.hero {
     // background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://unsplash.it/1200/900?random) no-repeat center center fixed;
@@ -175,6 +209,12 @@ a, .button {
       bottom: 0;
       left: 0;
       right: 0;
+    }
+    .hero-text {
+      color: #f6f2e5;
+      color: var(--white);
+      font-size: 4rem;
+      line-height: 1.4;
     }
   }
   &__content {
@@ -328,6 +368,12 @@ a, .button {
   .left-text {
     padding-top: 1.7rem;
   }
+  .right-text {
+    .skill-listings {
+      margin-left: 1.4rem;
+      margin-bottom: 2rem;
+    }
+  }
   .job {
     padding: 1rem;
     display: block;
@@ -353,10 +399,6 @@ a, .button {
       }
     }
   }
-  .tag.is-neon {
-    color: var(--neon);
-    background-color: var(--neon-bg);
-  }
 }
 
 
@@ -372,12 +414,20 @@ a, .button {
 
 /* Contact */
 .contact {
+  ::placeholder {
+    color: white;
+    opacity: 0.3; /* Firefox */
+  }
+  ::-ms-input-placeholder { /* Edge 12-18 */
+    color: white;
+  }
   label {
     color: var(--white);
   }
   input,
   textarea {
-    background-color: #f1f1f1;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
   }
   .formButton {
     padding: 0;

@@ -17,11 +17,11 @@ function Project(props) {
           </div> */}
           <footer className="card-footer mt-4">
             <div className="card-footer-item mb-0 is-flex is-align-items-flex-start is-justify-content-flex-start is-flex-direction-column">
-              <p className="link-width is-size-4">
+              <p className="link-width is-size-5">
                 {props.name}
                 {/* <a href={props.link} alt={props.name} title={props.name} target="_blank" rel="noreferrer">{props.name} &nbsp; <FontAwesomeIcon className="fa-icon" icon={faExternalLink} size="xs"></FontAwesomeIcon> </a> */}
               </p>
-              <p className="tag is-dark is-medium">{props.type}</p>
+              <p className="tag is-neon is-medium">{props.type}</p>
             </div>
             <div className="card-footer-item has-text-left is-flex is-align-items-flex-start is-justify-content-flex-start">
               <p className="is-small">
