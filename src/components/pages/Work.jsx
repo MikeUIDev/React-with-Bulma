@@ -17,7 +17,7 @@ import BackToTop from "../Backtotop";
 
 function Work() {
   return (
-    <section aria-label="Work Experience section" className="work hero content is-large is-fullheight-with-navbar">
+    <section aria-label="Work Experience section" className="work hero content is-large is-fullheight-with-navbar fade_in">
       <div className="page-body">
         <div className="container">
           <div className="section">

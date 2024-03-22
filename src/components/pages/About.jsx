@@ -2,6 +2,7 @@ import React from "react";
 import Job from "../Job";
 // import {ButtonNeon} from "../Buttons"
 import BackToTop from "../Backtotop";
+// import FadeIn from "../FadeIn"
 
 const first = [
   'HTML',
@@ -77,7 +78,7 @@ function About() {
             </div>
           </div> */}
 
-          <section class="section">
+          <section class="section fade_in">
             <div className="columns">
               <div className="column is-12">
                 <h1 className="title">About</h1>
@@ -155,7 +156,6 @@ function About() {
                           <ul className="skill-listings">
                             <li>Figma</li>
                             <li>Design Systems</li>
-                            <li>Resarching</li>
                             <li>Wireframing</li>
                             <li>Prototyping</li>
                             <li>Fidelity</li>
@@ -182,6 +182,7 @@ function About() {
                       </div>
                     </div>
                   </section>
+
 
                   {/* <div class="columns is-centered has-text-centered">
                     <div class="column">

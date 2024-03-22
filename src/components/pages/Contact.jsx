@@ -36,7 +36,7 @@ function Contact() {
   };
 
   return (
-    <section aria-label="Contact me section" className="contact hero content is-medium is-fullheight-with-navbar">
+    <section aria-label="Contact me section" className="contact hero content is-medium is-fullheight-with-navbar fade_in">
       <div className="page-body">
         <div className="container">
           <div className="section">

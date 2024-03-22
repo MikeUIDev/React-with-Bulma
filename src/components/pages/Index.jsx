@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 function Home() {
     return (
-        <section aria-label="Homepage section" className="home hero is-medium is-fullheight">
+        <section aria-label="Homepage section" className="home hero is-medium is-fullheight fade_in">
             <div className="hero-body">
                 {/* <div className="text-over-hero">Mike Lin</div> */}
                 <div className="container">
