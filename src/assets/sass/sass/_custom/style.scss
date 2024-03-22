@@ -59,6 +59,10 @@ a, .button {
   to   { opacity: 1; }
 }
 
+.is-invisible {
+  display: none !important;
+}
+
 .fade-in-section {
   opacity: 0;
   transform: translateY(10vh);
