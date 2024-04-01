@@ -19,11 +19,14 @@ function Contact() {
   }
 
   function removeBlock(ev) {
+    const buttonMsg = document.getElementById("button-msg");
     const sendMsg = document.getElementById("send-msg");
     const guestName = document.getElementById("from_name");
     const guestEmail = document.getElementById("from_email");
     const guestMsg = document.getElementById("guest-msg");
     const test = guestName && guestName.value !== "" && guestEmail && guestEmail.value !== "" && guestMsg && guestMsg.value !== "" ? sendMsg.classList.add("is-invisible") : ''
+    // const test2 = input && input.value !== "" && textarea && textarea.value !== "" ? sendMsg.classList.add("is-invisible") : ''
+    // const test = guestName && guestName.value !== "" && guestEmail && guestEmail.value !== "" && guestMsg && guestMsg.value !== "" ? buttonMsg.setAttribute("disabled", "") : ''
 
     return test;
   }
@@ -128,7 +131,7 @@ function Contact() {
                   />
                 </div>
                 <div className="column is-6">
-                  <input className="button formButton custom-neon is-outlined is-rounded is-medium has-text-weight-normal is-fullwidth" type="submit" value="Send Message" onClick={removeBlock} />
+                  <input id="button-msg" className="button formButton custom-neon is-outlined is-rounded is-medium has-text-weight-normal is-fullwidth" type="submit" value="Send Message" onClick={removeBlock} />
                     {/* Send Message&nbsp;&nbsp;
                     <FontAwesomeIcon icon={faPaperPlane} color="white" size="sm"></FontAwesomeIcon> */}
                 </div>

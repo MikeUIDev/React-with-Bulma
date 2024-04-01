@@ -3,19 +3,14 @@
   "name": "Mike Lin Studio Portfolio React Site",
   "icons": [
     {
-      "src": "favicon.gif",
-      "type": "image/gif",
-      "sizes": "25x25"
+        "src": "/android-chrome-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+        "src": "/android-chrome-256x256.png",
+        "sizes": "256x256",
+        "type": "image/png"
     }
   ],
   "start_url": "/",
