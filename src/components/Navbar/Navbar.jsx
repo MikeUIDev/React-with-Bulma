@@ -17,14 +17,11 @@ function Navbar() {
   return (
     <nav className="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
       <div className="container">
-        <div className="navbar-brand">
-          {/* <a className="navbar-item" href="/">
-            <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"></img>
-          </a> */}
+        {/* <div className="navbar-brand">
           <Link exact to="/" className="navbar-item has-text-weight-bold home">Mike Lin</Link>
-          {/* <p className="navbar-item has-text-weight-bold home"><FontAwesomeIcon icon={faArrowRight} color="white" size="md"></FontAwesomeIcon></p>
-          <p className="has-text-weight-bold dev-title">Frontend Developer</p> */}
-          <span
+          <p className="navbar-item has-text-weight-bold home"><FontAwesomeIcon icon={faArrowRight} color="white" size="md"></FontAwesomeIcon></p>
+          <p className="has-text-weight-bold dev-title">Frontend Developer</p>
+          <a
             role="button"
             className="navbar-burger burger"
             aria-label="menu"
@@ -40,8 +37,9 @@ function Navbar() {
             <span aria-hidden="true" />
             <span aria-hidden="true" />
             <span aria-hidden="true" />
-          </span>
-        </div>
+            <span aria-hidden="true" />
+          </a>
+        </div> */}
         <div id="navbarHeader" className="navbar-menu">
           <div className={scroll ? "navbar-end has-text-centered scrolled" : "navbar-end has-text-centered"}>
 
@@ -61,7 +59,7 @@ function Navbar() {
               </a>
             </div>*/}
 
-            {/* <NavLink to="/" className="navbar-item is-dark is-inverted work has-text-weight-bold">/</NavLink> */}
+            <NavLink to="/" className="navbar-item is-dark is-inverted work has-text-weight-bold">/</NavLink>
             <NavLink to="/work" className="navbar-item is-dark is-inverted work">Work</NavLink>
             <NavLink to="/user" className="navbar-item is-dark is-inverted design">Design</NavLink>
             <NavLink to="/about" className="navbar-item is-dark is-inverted about-me">About Me</NavLink>

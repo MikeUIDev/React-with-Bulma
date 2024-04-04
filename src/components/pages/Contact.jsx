@@ -58,7 +58,7 @@ function Contact() {
             <form class="formContainer" action="?" method="POST" onSubmit={handleOnSubmit}>
               <div className="columns is-centered has-text-centered">
                 <div className="column is-8">
-                  <h1 className="title has-text-weight-bold is-spaced is-size-2-desktop is-size-3-tablet is-size-4-mobile">
+                  <h1 className="title has-text-weight-bold is-spaced is-size-2-desktop is-size-2-tablet is-size-3-mobile">
                     GET IN TOUCH
                   </h1>
                   <h2 className="title has-text-weight-normal">Feel free to reach out regarding to job opportunity, project, or just say hello.</h2>
@@ -126,7 +126,7 @@ function Contact() {
                     </div>
                   </div>
               </div>
-              <div id="send-msg" className="columns is-centered has-text-centered mt-4">
+              <div id="send-msg" className="send-container columns is-centered has-text-centered mt-4">
                 <div className="column is-2">
                   <input className="button button-reset formButton custom-neon is-light is-outlined is-rounded is-medium has-text-weight-normal is-fullwidth" type="reset" value="Reset"
                     onClick={reset}

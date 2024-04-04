@@ -49,8 +49,8 @@ function Footer() {
           </div>
         </div>
         <div className="columns has-text-centered">
-          <p className="column copyright">
-            &#169; {todayDay} mikelinstudio. All Rights Reserved.
+          <p className="column copyright is-size-6">
+            &#169; {todayDay} Mike Lin Studio
           </p>
         </div>
       </div>
