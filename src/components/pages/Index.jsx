@@ -19,8 +19,8 @@ function Home() {
                             </p>
                         </div> */}
                         <div class="column">
-                            <p class="title is-spaced is-size-3-mobile hero-text">Hi. I'm Mike.</p>
-                            <p class="subtitle is-spaced is-size-3 is-size-4-mobile has-text-weight-bold">A Frontend Developer and<br /> also love to design beautiful things.</p>
+                            <p class="title is-spaced is-size-3-mobile home__text">Hi. I'm Mike.</p>
+                            <p class="subtitle is-spaced is-size-3 is-size-4-mobile has-text-weight-bold home__subtext">A Frontend Developer and<br /> also love to design beautiful things.</p>
                             </div>
                         <div className="column is-6 left">
                         </div>

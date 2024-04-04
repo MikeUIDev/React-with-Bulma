@@ -95,7 +95,7 @@ function About() {
                     <p className="has-text-weight-bold">To be able to code and design well, is an unicorn of development world. Collaboration between designers and developers is paramount and if a Frontend Developer possess UX/UI design expertise, inter-team communication becomes seamless.</p>
                     <p>I am a person-oriented individual who are motivated by helping others. Knowing what I do that contribute others positively derive satisfaction to me. Most important of all, the key to successful communication is to empathize with others and tailor my message to resonate with their specific needs and desires.</p>
                   </div>
-                  <h2 className="mb-6">Experience</h2>
+                  <h2 className="title mb-6">Experience</h2>
                   <section id="experience" class="experience columns is-flex-desktop-only">
                     {/* <aside className="column is-2 is-size-5 has-text-weight-bold left-text">Experience</aside> */}
                     <div className="column is-9 jobs">
@@ -164,9 +164,8 @@ function About() {
                       </div>
                     </aside>
                   </section>
-
+                  <h2 className="title mb-6">Project</h2>
                   <section id="experience" class="experience columns is-flex-desktop-only">
-                    <aside className="column is-2 is-size-5 has-text-weight-bold left-text">Project</aside>
                     <div className="column is-10 jobs">
                       <div className="job">
                         <Job

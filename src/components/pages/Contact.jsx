@@ -41,11 +41,11 @@ function Contact() {
     e.preventDefault();
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
       .then((result) => {
-        thankYou.innerHTML=`<p class="sent-msg is-size-4 has-text-weight-bold has-text-primary">Thank you for your message. I will get back to you as soon as I can.</p>`
+        thankYou.innerHTML=`<div class="message-body"><p class="sent-msg is-size-4 has-text-weight-bold has-text-grey-darker">Thank you for your message. I will get back to you as soon as I can.</p></div>`
 
       }, (error) => {
         console.log(error.text);
-        thankYou.innerHTML=`<p class="sent-msg__error is-size-4 has-text-weight-bold has-text-danger">Something went wrong! Your message didn't send. Please scroll down and click on my email. Thank you.</p>`
+        thankYou.innerHTML=`<div class="message-body"><p class="sent-msg__error is-size-4 has-text-weight-bold has-text-danger">Something went wrong! Your message didn't send. Please scroll down and click on my email. Thank you.</p></div>`
       });
     e.target.reset()
   };
@@ -61,12 +61,14 @@ function Contact() {
                   <h1 className="title has-text-weight-bold is-spaced is-size-2-desktop is-size-3-tablet is-size-4-mobile">
                     GET IN TOUCH
                   </h1>
-                  <p className="is-size-3 is-size-5-mobile mt-4">Feel free to reach out regarding to job opportunity, project, or just say hello.</p>
+                  <h2 className="title has-text-weight-normal">Feel free to reach out regarding to job opportunity, project, or just say hello.</h2>
                 </div>
               </div>
               <div className="columns is-centered has-text-centered mt-4">
                 <div className="column is-8">
-                  <div id="thank-you-message"></div>
+                  <article class="message is-dark">
+                      <div id="thank-you-message"></div>
+                  </article>
                 </div>
               </div>
               <div className="columns is-centered has-text-centered">

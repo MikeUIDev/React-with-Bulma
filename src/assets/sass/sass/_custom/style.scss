@@ -24,6 +24,7 @@
   --64px: 4rem;
   --font-family-lato: Lato, Helvetica, arial;
   --font-family-open-sans: 'Open Sans', Helvetica, arial;
+  --font-family-roboto-slab: "Roboto Slab", serif;
 }
 
 body {
@@ -124,6 +125,13 @@ a, .button {
   }
 }
 
+.tag {
+  &.is-neon {
+    color: var(--neon);
+    background-color: var(--neon-bg);
+  }
+}
+
 
 // Navigation
 .navbar {
@@ -143,7 +151,7 @@ a, .button {
     border-radius: 50px;
     padding: 10px;
     .navbar-item {
-      font-family: "Roboto Slab", serif;
+      font-family: var(--font-family-roboto-slab);
       font-size: 1rem;
       color: var(--white);
       &:hover,
@@ -158,7 +166,7 @@ a, .button {
       }
     }
     .dev-title {
-      font-family: "Roboto Slab", serif;
+      font-family: var(--font-family-roboto-slab);
       font-size: 1rem;
       color: var(--white);
       align-items: center;
@@ -186,11 +194,9 @@ a, .button {
       background-color: var(--bg);
     }
     .navbar-item {
-      font-family: "Open Sans", helvetica, arial, serif;
-      font-size: 1rem;
-      // color: #141c3a;
+      font-family: var(--font-family-open-sans);
       color: var(--white);
-      padding: 1rem;
+      padding: 1rem 1.2rem;
       z-index: 1000;
       margin: 0 5px;
       font-weight: 600;
@@ -304,12 +310,16 @@ a, .button {
       left: 0;
       right: 0;
     }
-    .hero-text {
-      color: #f6f2e5;
-      color: var(--white);
-      font-size: var(--font-big-header);
-      line-height: 1;
-    }
+  }
+  &__text {
+    color: var(--white);
+    font-size: var(--font-big-header);
+    line-height: 1;
+  }
+  &__subtext {
+    color: var(--white);
+    font-size: var(--font-big-subheader);
+    line-height: 1.4;
   }
   &__content {
     &--text {
@@ -332,29 +342,29 @@ a, .button {
 .work {
   .card {
     background-color: transparent;
-  }
-  .card-image {
-    video {
-      max-height: 413px;
-      max-width: 612px;
-      width: 100%;
+    &-image {
+      video {
+        max-height: 413px;
+        max-width: 612px;
+        width: 100%;
+      }
     }
-  }
-  .card-footer {
-    border: none;
-    flex-direction: column;
-    @media screen and (min-width: 769px) {
-      flex-direction: row;
-    }
-    > .card-footer-item {
+    &-footer {
       border: none;
-      align-content: flex-start;
-    }
-    a {
-      font-family: 'Roboto Slab', serif;
-      color: var(--white);
-      &:hover {
-        color: var(--neon);
+      flex-direction: column;
+      @media screen and (min-width: 769px) {
+        flex-direction: row;
+      }
+      > .card-footer-item {
+        border: none;
+        align-content: flex-start;
+      }
+      a {
+        font-family: var(--font-family-roboto-slab);
+        color: var(--white);
+        &:hover {
+          color: var(--neon);
+        }
       }
     }
   }
@@ -457,12 +467,6 @@ a, .button {
 
 /* About */
 .about {
-  .tag {
-    &.is-neon {
-      color: var(--neon);
-      background-color: var(--neon-bg);
-    }
-  }
   .left-text {
     padding-top: 1.7rem;
   }
