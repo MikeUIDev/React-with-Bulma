@@ -1,10 +1,19 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 import { NavLink } from "react-router-dom";
 
 function Navbar() {
+
+  const [scroll, setScroll] = useState(false)
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 60)
+    })
+  }, [])
+
+
   return (
     <nav className="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
       <div className="container">
@@ -13,8 +22,8 @@ function Navbar() {
             <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"></img>
           </a> */}
           <Link exact to="/" className="navbar-item has-text-weight-bold home">Mike Lin</Link>
-          <p className="navbar-item has-text-weight-bold home"><FontAwesomeIcon icon={faArrowRight} color="white" size="md"></FontAwesomeIcon></p>
-          <p className="has-text-weight-bold dev-title">Frontend Developer</p>
+          {/* <p className="navbar-item has-text-weight-bold home"><FontAwesomeIcon icon={faArrowRight} color="white" size="md"></FontAwesomeIcon></p>
+          <p className="has-text-weight-bold dev-title">Frontend Developer</p> */}
           <span
             role="button"
             className="navbar-burger burger"
@@ -34,7 +43,7 @@ function Navbar() {
           </span>
         </div>
         <div id="navbarHeader" className="navbar-menu">
-          <div className="navbar-end has-text-centered">
+          <div className={scroll ? "navbar-end has-text-centered scrolled" : "navbar-end has-text-centered"}>
 
             {/* <a className="navbar-item is-dark is-inverted frontend-developer" href="/developer">
               Frontend Developer
@@ -52,7 +61,7 @@ function Navbar() {
               </a>
             </div>*/}
 
-
+            {/* <NavLink to="/" className="navbar-item is-dark is-inverted work has-text-weight-bold">/</NavLink> */}
             <NavLink to="/work" className="navbar-item is-dark is-inverted work">Work</NavLink>
             <NavLink to="/user" className="navbar-item is-dark is-inverted design">Design</NavLink>
             <NavLink to="/about" className="navbar-item is-dark is-inverted about-me">About Me</NavLink>

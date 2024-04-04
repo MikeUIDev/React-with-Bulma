@@ -6,36 +6,59 @@
   --white2: rgba(241, 241, 241, 1);
   --bg: rgba(6, 25, 29, 1);
   --bg-hover: rgba(10, 44, 50, 0.5);
+  --activeWhite: hsla(160, 52%, 71%, .2);
+  --hoverWhite: hsla(160, 52%, 71%, .4);
+  --font-body: clamp(1rem, 0.8645rem + 0.6024vw, 1.25rem);
+  --font-big-header: clamp(2rem, 0.9157rem + 4.8193vw, 4rem);
+  --font-sub-header: clamp(1.5rem, 1.2289rem + 1.2048vw, 2rem);
+  --14px: .875rem;
+  --15px: .9375rem;
+  --16px: 1rem;
+  --17px: 1.0625rem;
+  --18px: 1.125rem;
+  --19px: 1.1875rem;
+  --20px: 1.25rem;
+  --21px: 1.3125rem;
+  --24px: 1.5rem;
+  --42px: 2.652rem;
+  --64px: 4rem;
+  --font-family-lato: Lato, Helvetica, arial;
+  --font-family-open-sans: 'Open Sans', Helvetica, arial;
 }
 
 body {
-  font-family: 'Open Sans', Helvetica, arial;
   background-color: var(--bg);
   color: var(--white);
   margin: 0;
-  font-size: 1rem;
+  font-size:  var(--16px);
   font-weight: 400;
 }
 
 h1,h2,h3,h4,h5,h6,
 .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
   color: var(--white);
+  font-family: var(--font-family-open-sans);
 }
 
-.content h1.title {
-  font-size: 4rem;
+h2.title {
+  font-size: var(--font-sub-header);
 }
 
 p {
   color: var(--white);
-  font-family: Lato, Helvetica, arial;
+  font-family: var(--font-family-lato);
+  font-size: var(--font-body);
+}
+
+li {
+  font-size: var(--18px);
 }
 
 a {
   color: var(--neon);
   &:hover {
     color: var(--white);
-    text-decoration: line-through;
+    // text-decoration: line-through;
   }
 }
 
@@ -57,10 +80,6 @@ a, .button {
 @keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
-}
-
-.is-invisible {
-  display: none !important;
 }
 
 .fade-in-section {
@@ -87,10 +106,10 @@ a, .button {
 }
 
 .button {
-  font-family: "Open Sans", helvetica, arial, serif;
+  font-family: var(--font-family-open-sans);
   color: #141c3a;
-  padding: 1.2rem;
-  font-size: 18px;
+  padding: 0.5rem;
+  font-size: var(--18px);
 
   // Custom Neon Color
   &.custom-neon {
@@ -105,95 +124,128 @@ a, .button {
   }
 }
 
-.tag.is-neon {
-  color: var(--neon);
-  background-color: var(--neon-bg);
-}
 
+// Navigation
 .navbar {
-  background-color: rgba(6, 25, 29, 0.15);
-  backdrop-filter: blur(4px);
-}
-
-.navbar-brand {
-  .navbar-item {
-    font-family: "Roboto Slab", serif;
-    font-size: 1rem;
-    color: var(--white);
-    &:hover,
-    &:active {
+  background-color: rgba(6, 25, 29, 0);
+  // backdrop-filter: blur(4px);
+  // height: 3rem;
+  margin: 20px auto 0;
+  .home {
+    &:focus {
       background-color: transparent;
-      color: #999;
     }
   }
-  .navbar-burger {
-    span {
-      background-color: var(--white);
-    }
-  }
-  .dev-title {
-    font-family: "Roboto Slab", serif;
-    font-size: 1rem;
-    color: var(--white);
-    align-items: center;
-    display: flex;
-    padding: 0.5rem 0.75rem;
-  }
-}
-
-.navbar-menu {
-  &.is-active {
-    background-color: var(--bg);
-  }
-  .navbar-item {
-    font-family: "Open Sans", helvetica, arial, serif;
-    font-size: 1rem;
-    // color: #141c3a;
-    color: var(--white);
-    padding: 1rem;
-    z-index: 1000;
-    &.active {
-      color: var(--neon);
-      text-decoration: line-through;
-      // &:after {
-      //   content: "";
-      //   background: var(--neon);
-      //   height: 2px;
-      //   width: 69%;
-      //   margin-top: 28px;
-      //   margin-left: -4%;
-      //   position: absolute;
-      //   z-index: -1;
-      // }
-    }
-    .button.is-outlined {
-      border: 2px solid var(--neon);
-      font-weight: 600;
-      color: var(--neon);
-      min-width: 120px;
-      &:hover,
-      &:focus {
-        background-color: var(--neon);
-        color: var(--white);
-      }
-    }
-    &:hover {
-      background-color: transparent;
-      color: var(--neon);
-    }
-
-    .text-say-hello {
-      &:after {
-        content: "Say Hello";
-      }
-      &:hover:after{
-        content: "Contact";
-      }
-    }
-  }
-  .contact-me {
-    .button {
+  .navbar-brand {
+    background-color: rgba(6, 25, 29, 0.15);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border-radius: 50px;
+    padding: 10px;
+    .navbar-item {
+      font-family: "Roboto Slab", serif;
       font-size: 1rem;
+      color: var(--white);
+      &:hover,
+      &:active {
+        background-color: transparent;
+        color: #999;
+      }
+    }
+    .navbar-burger {
+      span {
+        background-color: var(--white);
+      }
+    }
+    .dev-title {
+      font-family: "Roboto Slab", serif;
+      font-size: 1rem;
+      color: var(--white);
+      align-items: center;
+      display: flex;
+      padding: 0.5rem 0.75rem;
+    }
+  }
+
+  .navbar-menu {
+    .navbar-end {
+      padding: 10px;
+      height: auto;
+      border-radius: 50px;
+      transition: all .2s linear;
+      @media screen and (min-width: 1024px) {
+        height: 4rem;
+      }
+      &.scrolled {
+        background-color: rgba(6, 25, 29, 0.5);
+        -webkit-backdrop-filter: blur(4px);
+        backdrop-filter: blur(4px);
+      }
+    }
+    &.is-active {
+      background-color: var(--bg);
+    }
+    .navbar-item {
+      font-family: "Open Sans", helvetica, arial, serif;
+      font-size: 1rem;
+      // color: #141c3a;
+      color: var(--white);
+      padding: 1rem;
+      z-index: 1000;
+      margin: 0 5px;
+      font-weight: 600;
+
+      &.active {
+        border-radius: 50px;
+        text-decoration: none;
+        background-color: var(--activeWhite);
+        // &:after {
+        //   content: "";
+        //   background: var(--neon);
+        //   height: 2px;
+        //   width: 69%;
+        //   margin-top: 28px;
+        //   margin-left: -4%;
+        //   position: absolute;
+        //   z-index: -1;
+        // }
+      }
+      .button.is-outlined {
+        border: 2px solid var(--neon);
+        font-weight: 600;
+        color: var(--neon);
+        min-width: 120px;
+        &:hover,
+        &:focus {
+          background-color: var(--neon);
+          color: var(--white);
+        }
+      }
+      &:hover {
+        background-color: var(--hoverWhite);
+        border-radius: 50px;
+      }
+
+      .text-say-hello {
+        display: none;
+        &:after {
+          content: "Say Hello";
+        }
+        &:hover:after{
+          content: "Contact";
+        }
+        @media screen and (min-width: 1024px) {
+          display: block;
+        }
+      }
+    }
+    .contact-me {
+      &:hover {
+        background-color: transparent;
+      }
+      .button {
+        font-size: 1rem;
+      }
     }
   }
 }
@@ -205,6 +257,10 @@ a, .button {
 //   position: relative;
 //   top: -60px;
 // }
+
+.content h1.title {
+  font-size: var(--font-big-header);
+}
 
 .hero {
   .page-body {
@@ -251,8 +307,8 @@ a, .button {
     .hero-text {
       color: #f6f2e5;
       color: var(--white);
-      font-size: 4rem;
-      line-height: 1.4;
+      font-size: var(--font-big-header);
+      line-height: 1;
     }
   }
   &__content {
@@ -271,8 +327,6 @@ a, .button {
     margin: 0;
   }
 }
-
-
 
 /* Work */
 .work {
@@ -403,6 +457,12 @@ a, .button {
 
 /* About */
 .about {
+  .tag {
+    &.is-neon {
+      color: var(--neon);
+      background-color: var(--neon-bg);
+    }
+  }
   .left-text {
     padding-top: 1.7rem;
   }
@@ -467,8 +527,17 @@ a, .button {
     background-color: rgba(255, 255, 255, 0.05);
     color: white;
   }
-  .formButton {
-    padding: 0;
+  .is-invisible {
+    display: none !important;
+  }
+  .button-reset {
+    background-color: transparent;
+    border-color: #f5f5f5;
+    color: #f5f5f5;
+    &:hover {
+      background-color: #f5f5f5;
+      color: #3c3c3c;
+    }
   }
 }
 

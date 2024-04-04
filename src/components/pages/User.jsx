@@ -59,7 +59,7 @@ function User() {
             </div>
             <div className="columns mb-6">
               <div className="column">
-                <h2 className="mb-6">Visual Design</h2>
+                <h2 className="title mb-6">Visual Design</h2>
                 <p>Meta landing page design systems</p>
                 <img className="mb-6" src={designSystems} alt="Meta Design Systems" title="Meta Design Systems" />
 
@@ -69,7 +69,7 @@ function User() {
 
             <div className="columns mb-6">
               <div className="column">
-                <h2 className="mb-6">UX Case Studies</h2>
+                <h2 className="title mb-6">UX Case Studies</h2>
                 <p>These were couple case studies I did for the User Experience Design bootcamp I attended at General Assembly.</p>
               </div>
             </div>

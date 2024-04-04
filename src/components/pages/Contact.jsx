@@ -61,7 +61,7 @@ function Contact() {
                   <h1 className="title has-text-weight-bold is-spaced is-size-2-desktop is-size-3-tablet is-size-4-mobile">
                     GET IN TOUCH
                   </h1>
-                  <p className="is-size-3 mt-4">Feel free to reach out regarding to job opportunity, project, or just say hello.</p>
+                  <p className="is-size-3 is-size-5-mobile mt-4">Feel free to reach out regarding to job opportunity, project, or just say hello.</p>
                 </div>
               </div>
               <div className="columns is-centered has-text-centered mt-4">
@@ -126,12 +126,12 @@ function Contact() {
               </div>
               <div id="send-msg" className="columns is-centered has-text-centered mt-4">
                 <div className="column is-2">
-                  <input className="button formButton custom-neon is-light is-outlined is-rounded is-medium has-text-weight-normal is-fullwidth" type="reset" value="Reset"
+                  <input className="button button-reset formButton custom-neon is-light is-outlined is-rounded is-medium has-text-weight-normal is-fullwidth" type="reset" value="Reset"
                     onClick={reset}
                   />
                 </div>
                 <div className="column is-6">
-                  <input id="button-msg" className="button formButton custom-neon is-outlined is-rounded is-medium has-text-weight-normal is-fullwidth" type="submit" value="Send Message" onClick={removeBlock} />
+                  <input id="button-msg" className="button button-submit formButton custom-neon is-outlined is-rounded is-medium has-text-weight-bold is-fullwidth" type="submit" value="Send Message" onClick={removeBlock} />
                     {/* Send Message&nbsp;&nbsp;
                     <FontAwesomeIcon icon={faPaperPlane} color="white" size="sm"></FontAwesomeIcon> */}
                 </div>
