@@ -40,25 +40,8 @@ function Navbar() {
             <span aria-hidden="true" />
           </a>
         </div> */}
-        <div id="navbarHeader" className="navbar-menu">
+        <div id="navbarHeader" className="navbar-menu non-mobile">
           <div className={scroll ? "navbar-end has-text-centered scrolled" : "navbar-end has-text-centered"}>
-
-            {/* <a className="navbar-item is-dark is-inverted frontend-developer" href="/developer">
-              Frontend Developer
-            </a>
-            <a className="navbar-item is-dark is-inverted ux-design" href="/user">
-              UX Design
-            </a>
-            <a className="navbar-item is-dark is-inverted is-rounded about-me" href="/about">
-              About Me
-            </a>
-            <div className="navbar-item contact-me">
-              <a className="button is-link is-outlined is-rounded text-say-hello is-hidden-mobile" href="contact"></a>
-              <a className="button is-link is-outlined is-rounded is-hidden-desktop" href="contact">
-                <span>Say Hello</span>
-              </a>
-            </div>*/}
-
             <NavLink to="/" className="navbar-item is-dark is-inverted work has-text-weight-bold">/</NavLink>
             <NavLink to="/work" className="navbar-item is-dark is-inverted work">Work</NavLink>
             <NavLink to="/user" className="navbar-item is-dark is-inverted design">Design</NavLink>
@@ -69,7 +52,6 @@ function Navbar() {
                 <span>Say Hello</span>
               </NavLink>
             </div>
-
           </div>
         </div>
       </div>

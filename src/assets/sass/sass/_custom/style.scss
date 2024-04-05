@@ -25,6 +25,8 @@
   --font-family-lato: Lato, Helvetica, arial;
   --font-family-open-sans: 'Open Sans', Helvetica, arial;
   --font-family-roboto-slab: "Roboto Slab", serif;
+
+  --bulma-box-background-color: white;
 }
 
 body {
@@ -205,6 +207,27 @@ a, .button {
       background-color: transparent;
     }
   }
+
+  // Overwrite mobile hamburger menu pops up
+  @media screen and (max-width: 1023px) {
+    .navbar-menu.non-mobile {
+      display: flex;
+      justify-content: center;
+      background-color: transparent;
+      box-shadow: none;
+      padding: initial;
+      .navbar-end {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        .navbar-item {
+          width: auto;
+        }
+      }
+    }
+  }
+
   &-brand {
     background-color: rgba(6, 25, 29, 0.15);
     -webkit-backdrop-filter: blur(4px);
@@ -238,12 +261,13 @@ a, .button {
 
   &-menu {
     .navbar-end {
-      padding: 0.625rem;
+      padding: 0.5rem 0.625rem;
       height: auto;
       border-radius: 50px;
       transition: all .2s linear;
       @media screen and (min-width: 1024px) {
         height: 3.5rem;
+        padding: 0.625rem;
       }
       &.scrolled {
         background-color: rgba(6, 25, 29, 0.5);
@@ -257,10 +281,13 @@ a, .button {
     .navbar-item {
       font-family: var(--font-family-open-sans);
       color: var(--white);
-      padding: 0.5rem 1rem;
+      padding: 0.25rem 0.75rem;
       z-index: 1000;
       margin: 0 5px;
       font-weight: 600;
+      @media screen and (min-width: 1024px) {
+        padding: 0.5rem 1rem;
+      }
 
       &.active {
         border-radius: 50px;
@@ -305,33 +332,15 @@ a, .button {
           display: block;
         }
       }
-    }
-    .contact-me {
-      &:hover {
-        background-color: transparent;
-      }
-      .button {
-        font-size: 1rem;
-      }
-    }
-  }
-
-  // Overwrite mobile hamburger menu pops up
-  @media screen and (max-width: 1023px) {
-    .navbar-menu {
-      display: flex;
-      justify-content: center;
-      background-color: transparent;
-      box-shadow: none;
-      padding: initial;
-      .navbar-end {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 0 0.5rem;
-        .navbar-item {
-          width: auto;
+      &.contact-me {
+        @media screen and (min-width: 500px) {
+          padding: 0;
+        }
+        &:hover {
+          background-color: transparent;
+        }
+        .button {
+          font-size: 1rem;
         }
       }
     }
@@ -428,6 +437,7 @@ a, .button {
 .work {
   .card {
     background-color: transparent;
+    box-shadow: none;
     &-image {
       video {
         max-height: 413px;
@@ -519,6 +529,20 @@ a, .button {
       margin-bottom: 2rem;
     }
   }
+  .experience {
+    align-items: flex-start;
+    aside {
+      position: initial;
+      @media screen and (min-width: 769px) {
+        position: sticky;
+        top: 100px;
+      }
+    }
+    > .jobs {
+      position: relative;
+      left: -16px;
+    }
+  }
   .job {
     padding: 1rem;
     display: block;
@@ -533,16 +557,6 @@ a, .button {
   .skills {
     gap: 10px;
     margin: 30px 0 0;
-  }
-  .experience {
-    align-items: flex-start;
-    aside {
-      position: initial;
-      @media screen and (min-width: 769px) {
-        position: sticky;
-        top: 100px;
-      }
-    }
   }
 }
 
@@ -586,6 +600,12 @@ a, .button {
       .column {
         width: 100%;
       }
+    }
+  }
+  .box {
+    &.thank-you {
+      background-color: var(--white);
+      color: #3c3c3c;
     }
   }
 }

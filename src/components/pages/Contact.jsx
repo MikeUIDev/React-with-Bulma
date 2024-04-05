@@ -41,11 +41,11 @@ function Contact() {
     e.preventDefault();
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
       .then((result) => {
-        thankYou.innerHTML=`<div class="message-body"><p class="sent-msg is-size-4 has-text-weight-bold has-text-grey-darker">Thank you for your message. I will get back to you as soon as I can.</p></div>`
+        thankYou.innerHTML=`<div class="box thank-you"><p class="sent-msg is-size-4 has-text-weight-bold has-text-grey-darker">Thank you for your message. I will get back to you as soon as I can.</p></div>`
 
       }, (error) => {
         console.log(error.text);
-        thankYou.innerHTML=`<div class="message-body"><p class="sent-msg__error is-size-4 has-text-weight-bold has-text-danger">Something went wrong! Your message didn't send. Please scroll down and click on my email. Thank you.</p></div>`
+        thankYou.innerHTML=`<div class="box thank-you"><p class="sent-msg__error is-size-4 has-text-weight-bold has-text-danger">Something went wrong! Your message didn't send. Please scroll down and click on my email. Thank you.</p></div>`
       });
     e.target.reset()
   };
@@ -66,9 +66,7 @@ function Contact() {
               </div>
               <div className="columns is-centered has-text-centered mt-4">
                 <div className="column is-8">
-                  <article class="message is-dark">
-                      <div id="thank-you-message"></div>
-                  </article>
+                  <div id="thank-you-message"></div>
                 </div>
               </div>
               <div className="columns is-centered has-text-centered">

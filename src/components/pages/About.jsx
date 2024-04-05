@@ -88,7 +88,6 @@ function About() {
               <div class="column is-12">
                 <div class="content is-medium">
                   <div class="mb-8">
-                    <p className="is-size-3 has-text-weight-bold">Hey, I'm Mike. Nice to meet you.</p>
                     <p className="is-size-4 has-text-weight-bold">A Frontend Developer with over 10 years of experience. I specialize in crafting website interfaces and aligning business objectives with user needs. I actively continue to seek challenges in a dynamic design enviornment.</p>
                     <p>My current focus revolves improving frontend development tech stacks such as and not limited to JavaScript, React, Next.js, RESTful and APIs Services, testing framework Jest and learning different type of CSS framework Bulma and Tailwind.</p>
                     <p>On the creative side of me, it is important to enhance the visual and functional aspects of product user interfaces and focus on optimizing user experiences between humans and products.</p>
@@ -166,7 +165,7 @@ function About() {
                   </section>
                   <h2 className="title mb-6">Project</h2>
                   <section id="experience" class="experience columns is-flex-desktop-only">
-                    <div className="column is-10 jobs">
+                    <div className="column is-9 jobs">
                       <div className="job">
                         <Job
                           title = "Frontend Developer"
