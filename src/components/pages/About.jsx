@@ -51,21 +51,41 @@ const fourth = [
   'Photoshop'
 ];
 
-const listItemsFirst = first.map(skill =>
-  <div class="control"><span class="tag is-neon is-medium">{skill}</span></div>
-)
-const listItemsSecond = second.map(skill =>
-  <div class="control"><span class="tag is-neon is-medium">{skill}</span></div>
-)
-const listItemsThird = third.map(skill =>
-  <div class="control"><span class="tag is-neon is-medium">{skill}</span></div>
-)
-
-const listItemsFourth = fourth.map(skill =>
-  <div class="control"><span class="tag is-neon is-medium">{skill}</span></div>
-)
+// const fourth = [
+//   {
+//     id: 1,
+//     skills: [
+//       'HTML',
+//       'CSS',
+//       'JavaScript',
+//       'Shopify',
+//       'WordPress',
+//       'Photoshop'
+//     ]
+//   }
+// ];
 
 function About() {
+
+  const listItemsFirst = first.map(skill =>
+    <div class="control"><span class="tag is-neon is-medium">{skill}</span></div>
+  )
+  const listItemsSecond = second.map(skill =>
+    <div class="control"><span class="tag is-neon is-medium">{skill}</span></div>
+  )
+  const listItemsThird = third.map(skill =>
+    <div class="control"><span class="tag is-neon is-medium">{skill}</span></div>
+  )
+  const listItemsFourth = fourth.map(skill =>
+    <div class="control"><span class="tag is-neon is-medium">{skill}</span></div>
+  )
+
+  // const listItemsFourth = fourth.map(skill =>{
+  //   const test = `${skill.skills}`
+  //   return <div class="control"><span class="tag is-neon is-medium">{test}</span></div>
+  // })
+
+
   return (
     <section aria-label="About me section" class="about hero content is-large is-fullheight-with-navbar">
       <div class="page-body">
@@ -128,7 +148,7 @@ function About() {
                           titleLink = "https://www.nolo.com"
                           company = "Internet Brands (Nolo)"
                           date = "2011 - 2019"
-                          description = "Was responsible for creating and updating user interface of high-profile customer-facing SaaS websites, including customer self-service web portal & enterprise application for the Sales team."
+                          description = "Responsible for creating and updating user interface of high-profile customer-facing SaaS websites, including customer self-service web portal & enterprise application for the Sales team."
                         />
                         <div className="skills is-flex is-flex-wrap-wrap">
                           {listItemsThird}
@@ -172,7 +192,7 @@ function About() {
                           titleLink = "https://www.katriscat.com/"
                           company = "Katris"
                           date = "2016 - 2017"
-                          description = "Implemented new WordPress site from start to final product and continually maintaining the site with new features."
+                          description = "Implemented new WordPress e-commerce business store using Shopify from planning with designer to release and continually maintaining the site with new features."
                         />
                         <div className="skills is-flex is-flex-wrap-wrap">
                           {listItemsFourth}
