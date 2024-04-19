@@ -5,7 +5,6 @@ import { faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 import emailjs from "emailjs-com"
 
-
 function Contact() {
   const [state, setState] = useState({
     name: "",
@@ -13,33 +12,36 @@ function Contact() {
     message: ""
   });
 
-  function reset(ev) {
-    ev.preventDefault();
+  const formValidated = () => {
+    return (
+      state.name &&
+      state.email &&
+      state.message.length > 4
+    );
+  };
+
+  const reset = () => {
     setState({ name: "", email: "", message: "" });
-  }
+  };
 
-  function removeBlock(ev) {
-    const buttonMsg = document.getElementById("button-msg");
-    const sendMsg = document.getElementById("send-msg");
-    const guestName = document.getElementById("from_name");
-    const guestEmail = document.getElementById("from_email");
-    const guestMsg = document.getElementById("guest-msg");
-    const test = guestName && guestName.value !== "" && guestEmail && guestEmail.value !== "" && guestMsg && guestMsg.value !== "" ? sendMsg.classList.add("is-invisible") : ''
-    // const test2 = input && input.value !== "" && textarea && textarea.value !== "" ? sendMsg.classList.add("is-invisible") : ''
-    // const test = guestName && guestName.value !== "" && guestEmail && guestEmail.value !== "" && guestMsg && guestMsg.value !== "" ? buttonMsg.setAttribute("disabled", "") : ''
+  // const removeBlock = () => {
+  //   const buttonMsg = document.getElementById("button-msg");
+  //   const sendMsg = document.getElementById("send-msg");
+  //   const guestName = document.getElementById("from_name");
+  //   const guestEmail = document.getElementById("from_email");
+  //   const guestMsg = document.getElementById("guest-msg");
+  //   const test = guestName && guestName.value !== "" && guestEmail && guestEmail.value !== "" && guestMsg && guestMsg.value !== "" ? sendMsg.classList.add("is-invisible") : ''
 
-    return test;
-  }
+  //   return test;
+  // }
 
   const SERVICE_ID = "service_29rrq9m";
   const TEMPLATE_ID = "template_t3z6ehf";
   const PUBLIC_KEY = "AP7N6IwTNiaxXTNwV";
   const thankYou = document.getElementById("thank-you-message");
 
-
   const handleOnSubmit = (e) => {
     e.preventDefault();
-    // setState({ name: "", email: "", message: "" });
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
       .then((result) => {
         thankYou.innerHTML=`<div class="box thank-you"><p class="sent-msg is-size-4 has-text-weight-bold has-text-grey-darker">Thank you for your message. I will get back to you as soon as I can.</p></div>`
@@ -48,7 +50,7 @@ function Contact() {
         console.log(error.text);
         thankYou.innerHTML=`<div class="box thank-you"><p class="sent-msg__error is-size-4 has-text-weight-bold has-text-danger">Something went wrong! Your message didn't send. Please scroll down and click on my email. Thank you.</p></div>`
       });
-    e.target.reset()
+    reset();
   };
 
   return (
@@ -77,11 +79,8 @@ function Contact() {
                       <label className="label is-medium has-text-left has-text-weight-normal" htmlFor="from_name">Name </label>
                       <div className="control has-icons-left">
                         <input id="from_name"  className="input is-medium has-text-left" placeholder="Joe Smith" name="from_name" type="text" value={state.name}
-                          onChange={ev => {
-                            setState({
-                              ...state,
-                              name: ev.target.value
-                            })
+                          onChange={(e) => {
+                            setState({...state, name: e.target.value})
                           }}
                           required />
                         <span className="icon is-small is-left">
@@ -95,10 +94,10 @@ function Contact() {
                       <label className="label is-medium has-text-left has-text-weight-normal" htmlFor="from_email">Email</label>
                       <div className="control has-icons-left">
                         <input id="from_email"  className="input is-medium" placeholder="hello@domain.com" name="from_email" type="email" value={state.email}
-                          onChange={ev => {
+                          onChange={(e) => {
                             setState({
                               ...state,
-                              email: ev.target.value
+                              email: e.target.value
                             })
                           }}
                           required />
@@ -115,10 +114,10 @@ function Contact() {
                         <label className="label is-medium has-text-left has-text-weight-normal" htmlFor="message">Message </label>
                         <div className="control">
                           <textarea id="guest-msg" rows="8" cols="50" type="text" placeholder="Type your message here" name="message" className="textarea is-medium" value={state.message}
-                            onChange={ev => {
+                            onChange={(e) => {
                                 setState({
                                 ...state,
-                                message: ev.target.value
+                                message: e.target.value
                               })
                             }}
                             required />
@@ -128,12 +127,10 @@ function Contact() {
                 </div>
                 <div id="send-msg" className="send-container columns is-centered has-text-centered mt-4">
                   <div className="column is-2">
-                    <input className="button button-reset formButton custom-neon is-light is-outlined is-rounded is-medium has-text-weight-normal is-fullwidth" type="reset" value="Reset"
-                      onClick={reset}
-                    />
+                    <input className="button button-reset formButton custom-neon is-light is-outlined is-rounded is-medium has-text-weight-normal is-fullwidth" type="reset" value="Reset" onClick={reset} />
                   </div>
                   <div className="column is-6">
-                    <input id="button-msg" className="button button-submit formButton custom-neon is-outlined is-rounded is-medium has-text-weight-bold is-fullwidth" type="submit" value="Send Message" onClick={removeBlock} disabled={!state.name && !state.email && !state.message} />
+                    <input id="button-msg" className="button button-submit formButton custom-neon is-outlined is-rounded is-medium has-text-weight-bold is-fullwidth" type="submit" value="Send Message" disabled={!formValidated()} />
                       {/* Send Message&nbsp;&nbsp;
                       <FontAwesomeIcon icon={faPaperPlane} color="white" size="sm"></FontAwesomeIcon> */}
                   </div>
