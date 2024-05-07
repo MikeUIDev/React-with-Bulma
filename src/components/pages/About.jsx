@@ -120,6 +120,7 @@ function About() {
                     <div className="column is-9 jobs">
                       <div className="job">
                         <Job
+                          key="1"
                           title = "Digital Developer"
                           titleLink = "https://www.espn.com"
                           company = "ESPN"
@@ -132,6 +133,7 @@ function About() {
                       </div>
                       <div className="job">
                         <Job
+                          key="2"
                           title = "Frontend Developer"
                           titleLink = "https://about.meta.com/"
                           company = "Meta"
@@ -144,6 +146,7 @@ function About() {
                       </div>
                       <div className="job">
                         <Job
+                          key="3"
                           title = "UI Designer"
                           titleLink = "https://www.nolo.com"
                           company = "Internet Brands (Nolo)"
@@ -188,6 +191,7 @@ function About() {
                     <div className="column is-9 jobs">
                       <div className="job">
                         <Job
+                          key="4"
                           title = "Frontend Developer"
                           titleLink = "https://www.katriscat.com/"
                           company = "Katris"

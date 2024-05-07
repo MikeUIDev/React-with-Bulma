@@ -24,6 +24,12 @@ function Contact() {
     setState({ name: "", email: "", message: "" });
   };
 
+  const successSent = () => {
+    return (
+      <div className="box thank-you"><p class="sent-msg is-size-4 has-text-weight-bold has-text-grey-darker">Thank you for your message. I will get back to you as soon as I can.</p></div>
+    );
+  };
+
   // const removeBlock = () => {
   //   const buttonMsg = document.getElementById("button-msg");
   //   const sendMsg = document.getElementById("send-msg");
@@ -78,9 +84,12 @@ function Contact() {
                     <div className="field">
                       <label className="label is-medium has-text-left has-text-weight-normal" htmlFor="from_name">Name </label>
                       <div className="control has-icons-left">
-                        <input id="from_name"  className="input is-medium has-text-left" placeholder="Joe Smith" name="from_name" type="text" value={state.name}
+                        <input id="from_name" className="input is-medium has-text-left" placeholder="Your Name" name="from_name" type="text" value={state.name}
                           onChange={(e) => {
-                            setState({...state, name: e.target.value})
+                            setState({
+                              ...state,
+                              name: e.target.value
+                            })
                           }}
                           required />
                         <span className="icon is-small is-left">

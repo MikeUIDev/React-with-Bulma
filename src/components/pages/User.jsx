@@ -1,4 +1,8 @@
 import React from "react";
+import {useEffect} from "react";
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faExternalLink } from '@fortawesome/free-solid-svg-icons'
 
 import foodieCaseStudy from "../../assets/images/foodies-hero.jpg";
 import travelBuddyCaseStudy from "../../assets/images/travel-buddy-hero.jpg";
@@ -31,13 +35,16 @@ import travelBuddy07 from "../../assets/images/travel-app-experiment.jpg"
 import travelBuddy08 from "../../assets/images/travel-app-experiment-02.jpg"
 
 import designSystems from "../../assets/images/Meta_Wiki_Design_System-Mike_Lin.jpg"
+import tekSystemsRedsign from "../../assets/images/Mike_Lin_TEKsystems_page_redesign.png"
 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-
 import BackToTop from "../Backtotop";
 
+import useScript from "../useScript.jsx";
+
 function User() {
+  useScript('https://mikelinstudio.com/main.js');
   return (
     <section aria-label="User Experience Design section" className="user hero content is-large is-fullheight-with-navbar fade_in">
       {/* <div class="hero-body">
@@ -59,11 +66,36 @@ function User() {
             </div>
             <div className="columns mb-6">
               <div className="column">
+
+              <h2 className="title mb-6">Page Redesign</h2>
+                <a href="https://mikelinstudio.com/design/Mike_Lin_TEKsystems_page_redesign.pdf" target="_blank" alt="TEKsystems page redesign" rel="noreferrer">
+                  <p>TEKsystems &nbsp; <FontAwesomeIcon className="fa-icon" icon={faExternalLink} size="xs"></FontAwesomeIcon></p>
+                  <img className="mb-6" src={tekSystemsRedsign} alt="TEKsystems page redesign" title="TEKsystems page redesign" />
+                </a>
+                <p>A single page redesign from one of <a href="https://www.teksystems.com/en/insights/version-next-now/2023/dojo-workforce-development-strategy" alt="TEKsystems Version Next Now" target="_blank" rel="noreferrer">TEKsystems' feature article pages using Figma</a>. </p>
+
+              {/* <button class="js-modal-trigger" data-target="modal-js-example">
+                Open JS example modal
+              </button>
+
+              <div id="modal-js-example" class="modal">
+                <div class="modal-background"></div>
+
+                <div class="modal-content">
+                  <p class="image is-4by3">
+                    <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="" />
+                  </p>
+                </div>
+
+                <button class="modal-close is-large" aria-label="close"></button>
+              </div> */}
+
+
+              </div>
+              <div className="column">
                 <h2 className="title mb-6">Visual Design</h2>
-                <p>Meta landing page design systems</p>
+                <p>Meta's landing page design systems</p>
                 <img className="mb-6" src={designSystems} alt="Meta Design Systems" title="Meta Design Systems" />
-
-
               </div>
             </div>
 

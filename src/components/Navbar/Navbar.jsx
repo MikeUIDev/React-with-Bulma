@@ -42,6 +42,7 @@ function Navbar() {
         </div> */}
         <div id="navbarHeader" className="navbar-menu non-mobile">
           <div className={scroll ? "navbar-end has-text-centered scrolled" : "navbar-end has-text-centered"}>
+            {/* Dark Model botton here */}
             <NavLink to="/" className="navbar-item is-dark is-inverted work has-text-weight-bold">/</NavLink>
             <NavLink to="/work" className="navbar-item is-dark is-inverted work">Work</NavLink>
             <NavLink to="/user" className="navbar-item is-dark is-inverted design">Design</NavLink>
