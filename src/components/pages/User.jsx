@@ -79,7 +79,7 @@ function User() {
                 <h1 className="title">Design</h1>
               </div>
             </div>
-            <div className="columns mb-6">
+            <div className="columns mb-8">
               <div className="column">
 
               <h2 className="title mb-6">Page Redesign</h2>
@@ -128,7 +128,7 @@ function User() {
             <div className="columns mb-6">
               <div className="column">
                 <h2 className="title mb-6">UX Case Studies</h2>
-                <p>These were couple case studies I did for the User Experience Design bootcamp I attended at General Assembly.</p>
+                <p>These were couple case studies I did for the User Experience Design bootcamp at General Assembly. A 10-week immersive UX design course emphasizing user-centered design: user research, personas, analysis, wireframes, user testing, and prototyping.</p>
               </div>
             </div>
             <Tabs>

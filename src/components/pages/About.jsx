@@ -5,6 +5,7 @@ import BackToTop from "../Backtotop";
 // import FadeIn from "../FadeIn"
 
 const first = [
+  'Responsive Web Development & Design',
   'HTML',
   'CSS',
   'JavaScript',
@@ -20,7 +21,7 @@ const first = [
 ];
 
 const second = [
-  'Responsive Web Design',
+  'Responsive Web Development & Design',
   'Figma',
   'Adobe Photoshop',
   'Adobe Illustrator',
@@ -115,10 +116,10 @@ function About() {
                     <p className="has-text-weight-bold">To be able to code and design well is an unicorn of the digital world. Collaboration between designers and developers is paramount and if a Frontend Developer possess UX/UI design expertise, inter-team communication becomes seamless.</p>
                     <p>I am a person-oriented individual who are motivated by helping others. Knowing what I do that contributes to others positively derives satisfaction to me. Most importantly, the key to successful communication is empathizing with others and tailoring my message to resonate with their needs and desires.</p>
                   </div>
-                  <h2 className="title mb-6">Experience</h2>
+                  <h2 className="title mb-4">Experience</h2>
                   <section id="experience" class="experience columns is-flex-desktop-only">
                     {/* <aside className="column is-2 is-size-5 has-text-weight-bold left-text">Experience</aside> */}
-                    <div className="column is-9 jobs">
+                    <div className="column is-8 jobs">
                       <div className="job">
                         <Job
                           key="1"
@@ -159,12 +160,13 @@ function About() {
                         </div>
                       </div>
                     </div>
-                    <aside className="column is-2 is-offset-1 is-size-5 has-text-weight-bold right-text">
+                    <aside className="column is-3 is-offset-1 is-size-5 has-text-weight-bold right-text">
                       <div className="columns">
                         <div className="column is-12 content is-normal">
                           <p className="is-size-4 has-text-weight-bold">Skills</p>
                           <p className="is-size-5 has-text-weight-bold">Frontend</p>
                           <ul className="skill-listings">
+                            <li>Web Development</li>
                             <li>HTML</li>
                             <li>CSS</li>
                             <li>Sass</li>
@@ -190,7 +192,7 @@ function About() {
                       </div>
                     </aside>
                   </section>
-                  <h2 className="title mb-6">Project</h2>
+                  <h2 className="title mb-4">Project</h2>
                   <section id="experience" class="experience columns is-flex-desktop-only">
                     <div className="column is-9 jobs">
                       <div className="job">
