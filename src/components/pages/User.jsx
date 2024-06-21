@@ -1,5 +1,6 @@
-import React from "react";
-import {useEffect} from "react";
+import React, { useState } from "react";
+
+import Link from "../Link"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExternalLink } from '@fortawesome/free-solid-svg-icons'
@@ -35,16 +36,30 @@ import travelBuddy07 from "../../assets/images/travel-app-experiment.jpg"
 import travelBuddy08 from "../../assets/images/travel-app-experiment-02.jpg"
 
 import designSystems from "../../assets/images/Meta_Wiki_Design_System-Mike_Lin.jpg"
-import tekSystemsRedsign from "../../assets/images/Mike_Lin_TEKsystems_page_redesign.png"
+import tekSystemsRedsign from "../../assets/images/Mike_Lin_TEKsystems_page_redesign.jpg"
 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import 'react-tabs/style/react-tabs.css';
 import BackToTop from "../Backtotop";
+import Modal from '../Modal';
 
-import useScript from "../useScript.jsx";
+import 'react-tabs/style/react-tabs.css';
 
 function User() {
-  useScript('https://mikelinstudio.com/main.js');
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalOpen2, setModalOpen2] = useState(false);
+  const openModal = () => {
+    setModalOpen(true);
+  };
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+  const openModal2 = () => {
+    setModalOpen2(true);
+  };
+  const closeModal2 = () => {
+    setModalOpen2(false);
+  };
+
   return (
     <section aria-label="User Experience Design section" className="user hero content is-large is-fullheight-with-navbar fade_in">
       {/* <div class="hero-body">
@@ -69,33 +84,44 @@ function User() {
 
               <h2 className="title mb-6">Page Redesign</h2>
                 <a href="https://mikelinstudio.com/design/Mike_Lin_TEKsystems_page_redesign.pdf" target="_blank" alt="TEKsystems page redesign" rel="noreferrer">
-                  <p>TEKsystems &nbsp; <FontAwesomeIcon className="fa-icon" icon={faExternalLink} size="xs"></FontAwesomeIcon></p>
-                  <img className="mb-6" src={tekSystemsRedsign} alt="TEKsystems page redesign" title="TEKsystems page redesign" />
+                  <img className="mb-4" src={tekSystemsRedsign} alt="TEKsystems page redesign" title="TEKsystems page redesign" />
                 </a>
-                <p>A single page redesign from one of <a href="https://www.teksystems.com/en/insights/version-next-now/2023/dojo-workforce-development-strategy" alt="TEKsystems Version Next Now" target="_blank" rel="noreferrer">TEKsystems' feature article pages using Figma</a>. </p>
+                <p>A landing page redesign from one of TEKsystems' <a href="https://www.teksystems.com/en/insights/version-next-now/2023/dojo-workforce-development-strategy" alt="TEKsystems Version Next Now" target="_blank" rel="noreferrer">feature article pages</a>.</p>
+                <p>The original article was a text heavy site and needed a way to modularlize different part of elements into easy-to-read sections. Furthermore, it needed balancing between white spaces and content area to improve user experience.</p>
+                <p>Tool used:</p>
+                <ul>
+                  <li>Figma</li>
+                </ul>
+                <p className="link-width is-size-5">
+                {<Link listing="View Full Redesign (PDF)" altText="TEKsystems page redesign link" urlLink="https://mikelinstudio.com/design/Mike_Lin_TEKsystems_page_redesign.pdf" />}
+                </p>
 
-              {/* <button class="js-modal-trigger" data-target="modal-js-example">
-                Open JS example modal
-              </button>
 
-              <div id="modal-js-example" class="modal">
-                <div class="modal-background"></div>
 
-                <div class="modal-content">
-                  <p class="image is-4by3">
-                    <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="" />
-                  </p>
-                </div>
-
-                <button class="modal-close is-large" aria-label="close"></button>
-              </div> */}
-
+                {/* <div>
+                  <button onClick={openModal}>Open Modal TEK</button>
+                  <Modal isOpen={modalOpen} onClose={closeModal}>
+                    <img className="" src={tekSystemsRedsign} alt="TEKsystems page redesign" title="TEKsystems page redesign" />
+                  </Modal>
+                </div> */}
 
               </div>
               <div className="column">
-                <h2 className="title mb-6">Visual Design</h2>
-                <p>Meta's landing page design systems</p>
-                <img className="mb-6" src={designSystems} alt="Meta Design Systems" title="Meta Design Systems" />
+                <h2 className="title mb-6">Design Systems</h2>
+                <img className="mb-4" src={designSystems} alt="Meta Design Systems" title="Meta Design Systems" />
+                <p>At Meta, I created a new design system from a new guidelines to empower developers and non-developers to bring their brands into life as quickly as possible.</p>
+                <p>Tool used:</p>
+                <ul>
+                  <li>Figma</li>
+                </ul>
+
+                {/* <div>
+                  <button onClick={openModal2}>Open Modal</button>
+                  <Modal isOpen={modalOpen2} onClose={closeModal2}>
+                    <img className="" src={designSystems} alt="Meta Design Systems" title="Meta Design Systems" />
+                  </Modal>
+                </div> */}
+
               </div>
             </div>
 
@@ -119,12 +145,12 @@ function User() {
                 </div>
                 <div className="columns mb-8">
                   <div className="column is-4 is-offset-1 is-flex is-flex-direction-column">
-                    <span className="is-size-3 mb-4 has-text-weight-bold">Foodie</span>
+                    <span className="is-size-2 mb-4 has-text-weight-bold">Foodie</span>
                     <span>Role:</span>
                     <span>Product Designer</span>
                   </div>
                   <div className="column is-6">
-                    <p>Foodie is the final project I worked on during my UX Design bootcamp at General Assembly. It is a restaurant mobile app that search and reserve a table but in addition of that, it also tell the party how long they will have to wait until they are ready to be seated.</p>
+                    <p>Foodie is the final project I have worked on during my UX Design bootcamp at General Assembly. It is a restaurant mobile app that search and reserve a table but in addition of that, it also tell the party how long they will have to wait until they are ready to be seated.</p>
                   </div>
                 </div>
                 <div className="columns">
@@ -242,12 +268,12 @@ function User() {
                   </div>
                   <div className="columns mb-8">
                   <div className="column is-4 is-offset-1 is-flex is-flex-direction-column">
-                    <span className="is-size-3 mb-4 has-text-weight-bold">Travel Buddy</span>
+                    <span className="is-size-2 mb-4 has-text-weight-bold">Travel Buddy</span>
                     <span>Role:</span>
                     <span>Product Designer</span>
                   </div>
                     <div className="column is-6">
-                      <p>Travel Buddy is an concept mobile app that I created while in the process of making my bootcamp project Foodie. This app is to inform travelers all nearby attractions and how to get to their destinations by using public transportations. It also shows you the travel time and different routes you can take.</p>
+                      <p>Travel Buddy is a concept mobile app that I created while in the process of making my bootcamp project Foodie. This app is to inform travelers all nearby attractions and how to get to their destinations by using public transportations. It also shows you the travel time and different routes you can take.</p>
                     </div>
                 </div>
                 <div className="columns">

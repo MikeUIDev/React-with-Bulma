@@ -53,7 +53,7 @@ function Work() {
                   videoUrl = {NissanVideo}
                   name={<Link listing="Nissan Heisman House" urlLink="https://promo.espn.com/espn/contests/nissan/heisman/2023/index" />}
                   type="Heroku"
-                  description="Yearly event from Nissan Heisman House featuring top atheletes to compete for the spot of Heisman Trophy."
+                  description="Yearly event from Nissan Heisman House featuring top athletes to compete for the spot of Heisman Trophy."
                 />
               </div>
               <div className="column is-6">
@@ -62,7 +62,7 @@ function Work() {
                   videoUrl = {AllStateVideo}
                   name={<Link listing="Allstate AFCA Good Works Team" urlLink="https://promo.espn.com/espn/contests/allstate/2023/index" />}
                   type="Heroku"
-                  description="Allstate promos top athletes for their recognizes of their efforts for community off the field services."
+                  description="Allstate promotes top athletes for their recognition of their efforts for community off the field services."
                 />
               </div>
             </div>

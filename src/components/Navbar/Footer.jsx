@@ -36,6 +36,9 @@ function Footer() {
             <a className="dribbble" href="https://dribbble.com/mikelindesign" target="_blank" rel="noreferrer" alt="Mike Dribbble">
               <FontAwesomeIcon icon="fa-brands fa-dribbble" color="rgba(246, 242, 229, 0.8)" size="2x" />
             </a>
+            <a className="youtube" href="https://www.youtube.com/channel/UCmCK0FAXOLkXB3A6w3w9mIA" target="_blank" rel="noreferrer" alt="YouTube Music Channel Urban Lofi Studio">
+              <FontAwesomeIcon icon="fa-brands fa-youtube" color="rgba(246, 242, 229, 0.8)" size="2x" />
+            </a>
             <a id="myEmail" className="email" href="mailto:mike&#64;mikelinstudio&#46;com" target="_blank" rel="noreferrer" alt="Mike Email">
               <FontAwesomeIcon icon={faEnvelope} color="rgba(246, 242, 229, 0.8)" size="2x"></FontAwesomeIcon>
             </a>

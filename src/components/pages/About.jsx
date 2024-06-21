@@ -9,27 +9,28 @@ const first = [
   'CSS',
   'JavaScript',
   'Foundation CSS Framework',
+  'UX Design',
+  'Adobe Photoshop',
   'npm/node',
   'GitHub/Git',
   'Heroku',
   'Contentful',
   'Salesforce Marketing Cloud Email Studio',
-  'UX Design',
-  'Photoshop',
   'Google Analytics'
 ];
 
 const second = [
-  'HTML',
-  'CSS',
+  'Responsive Web Design',
   'Figma',
-  'Sketch',
-  'Photoshop',
-  'Illustrator',
+  'Adobe Photoshop',
+  'Adobe Illustrator',
   'Mailchimp',
   'Design Systems',
   'Wireframe',
-  'Prototype'
+  'Prototype',
+  'HTML',
+  'CSS',
+  'JavaScript'
 ];
 const third = [
   'HTML',
@@ -108,11 +109,11 @@ function About() {
               <div class="column is-12">
                 <div class="content is-medium">
                   <div class="mb-8">
-                    <p className="is-size-4 has-text-weight-bold">A Frontend Developer with over 10 years of experience. I specialize in crafting website interfaces and aligning business objectives with user needs. I actively continue to seek challenges in a dynamic design enviornment.</p>
-                    <p>My current focus revolves improving frontend development tech stacks such as and not limited to JavaScript, React, Next.js, RESTful and APIs Services, testing framework Jest and learning different type of CSS framework Bulma and Tailwind.</p>
+                    <p className="is-size-4 has-text-weight-bold">A Frontend Developer and Designer with over 10 years of experience. I specialize in crafting website interfaces and aligning business objectives with user needs. I actively continue to seek challenges in a dynamic design environment.</p>
+                    <p>My current focus revolves around improving frontend development tech stacks such as but not limited to JavaScript, React, Next.js, RESTful, and APIs Services, testing framework Jest, and learning different types of CSS frameworks Bulma and Tailwind.</p>
                     <p>On the creative side of me, it is important to enhance the visual and functional aspects of product user interfaces and focus on optimizing user experiences between humans and products.</p>
-                    <p className="has-text-weight-bold">To be able to code and design well, is an unicorn of development world. Collaboration between designers and developers is paramount and if a Frontend Developer possess UX/UI design expertise, inter-team communication becomes seamless.</p>
-                    <p>I am a person-oriented individual who are motivated by helping others. Knowing what I do that contribute others positively derive satisfaction to me. Most important of all, the key to successful communication is to empathize with others and tailor my message to resonate with their specific needs and desires.</p>
+                    <p className="has-text-weight-bold">To be able to code and design well is an unicorn of the digital world. Collaboration between designers and developers is paramount and if a Frontend Developer possess UX/UI design expertise, inter-team communication becomes seamless.</p>
+                    <p>I am a person-oriented individual who are motivated by helping others. Knowing what I do that contributes to others positively derives satisfaction to me. Most importantly, the key to successful communication is empathizing with others and tailoring my message to resonate with their needs and desires.</p>
                   </div>
                   <h2 className="title mb-6">Experience</h2>
                   <section id="experience" class="experience columns is-flex-desktop-only">
@@ -138,7 +139,7 @@ function About() {
                           titleLink = "https://about.meta.com/"
                           company = "Meta"
                           date = "2019 - 2021"
-                          description = "Led internal web projects that developed user-centered mobile-first single-page applications (SPA) and landing pages."
+                          description = "Led internal web projects that designed and developed user-centered mobile-first single-page applications (SPA) and landing pages."
                         />
                         <div className="skills is-flex is-flex-wrap-wrap">
                           {listItemsSecond}
@@ -151,7 +152,7 @@ function About() {
                           titleLink = "https://www.nolo.com"
                           company = "Internet Brands (Nolo)"
                           date = "2011 - 2019"
-                          description = "Responsible for creating and updating user interface of high-profile customer-facing SaaS websites, including customer self-service web portal & enterprise application for the Sales team."
+                          description = "Responsible for creating and updating the user interface of high-profile customer-facing SaaS websites, including customer self-service web portal & enterprise application for the Sales team."
                         />
                         <div className="skills is-flex is-flex-wrap-wrap">
                           {listItemsThird}
@@ -161,21 +162,24 @@ function About() {
                     <aside className="column is-2 is-offset-1 is-size-5 has-text-weight-bold right-text">
                       <div className="columns">
                         <div className="column is-12 content is-normal">
-                          <p className="is-size-5 has-text-weight-bold">Skills</p>
-                          <p className="is-size-6 has-text-weight-bold">Frontend</p>
+                          <p className="is-size-4 has-text-weight-bold">Skills</p>
+                          <p className="is-size-5 has-text-weight-bold">Frontend</p>
                           <ul className="skill-listings">
                             <li>HTML</li>
                             <li>CSS</li>
-                            <li>JavaScript</li>
                             <li>Sass</li>
-                            <li>Bootstrap & Bulma CSS</li>
+                            <li>Bootstrap & Bulma CSS Framework</li>
+                            <li>JavaScript</li>
                             <li>React</li>
                             <li>Git / GitHub</li>
                             <li>WordPress</li>
                             <li>Contentful</li>
+                            <li>Email Marketing</li>
                           </ul>
-                          <p className="is-size-6 has-text-weight-bold">UX</p>
+                          <p className="is-size-5 has-text-weight-bold">Design</p>
                           <ul className="skill-listings">
+                            <li>Responsive Web Design</li>
+                            <li>User Experience Design</li>
                             <li>Figma</li>
                             <li>Design Systems</li>
                             <li>Wireframing</li>
@@ -196,7 +200,7 @@ function About() {
                           titleLink = "https://www.katriscat.com/"
                           company = "Katris"
                           date = "2016 - 2017"
-                          description = "Implemented new WordPress e-commerce business store using Shopify from planning with designer to release and continually maintaining the site with new features."
+                          description = "Implemented new WordPress e-commerce business store using Shopify from planning with the designer to release and continually maintaining the site with new features."
                         />
                         <div className="skills is-flex is-flex-wrap-wrap">
                           {listItemsFourth}
