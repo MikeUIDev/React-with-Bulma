@@ -83,11 +83,12 @@ function User() {
               <div className="column">
 
               <h2 className="title mb-6">Page Redesign</h2>
-                <a href="https://mikelinstudio.com/design/Mike_Lin_TEKsystems_page_redesign.pdf" target="_blank" alt="TEKsystems page redesign" rel="noreferrer">
+                {/* <a href="https://mikelinstudio.com/design/Mike_Lin_TEKsystems_page_redesign.pdf" target="_blank" alt="TEKsystems page redesign" rel="noreferrer">
                   <img className="mb-4" src={tekSystemsRedsign} alt="TEKsystems page redesign" title="TEKsystems page redesign" />
-                </a>
+                </a> */}
+                <img className="mb-4" src={tekSystemsRedsign} alt="TEKsystems page redesign" title="TEKsystems page redesign" />
                 <p>A landing page redesign from one of TEKsystems' <a href="https://www.teksystems.com/en/insights/version-next-now/2023/dojo-workforce-development-strategy" alt="TEKsystems Version Next Now" target="_blank" rel="noreferrer">feature article pages</a>.</p>
-                <p>The original article was a text heavy site and needed a way to modularlize different part of elements into easy-to-read sections. Furthermore, it needed balancing between white spaces and content area to improve user experience.</p>
+                <p>The original article was a text-heavy site and needed a way to modularize different parts of elements into easy-to-read sections. Furthermore, it needed balancing between white spaces and content areas to improve user experience.</p>
                 <p>Tool used:</p>
                 <ul>
                   <li>Figma</li>
@@ -109,7 +110,7 @@ function User() {
               <div className="column">
                 <h2 className="title mb-6">Design Systems</h2>
                 <img className="mb-4" src={designSystems} alt="Meta Design Systems" title="Meta Design Systems" />
-                <p>At Meta, I created a new design system from a new guidelines to empower developers and non-developers to bring their brands into life as quickly as possible.</p>
+                <p>At Meta, I created a new design system from a new brand guideline to empower developers and non-developers to bring their brands to life as quickly as possible.</p>
                 <p>Tool used:</p>
                 <ul>
                   <li>Figma</li>
@@ -128,7 +129,7 @@ function User() {
             <div className="columns mb-6">
               <div className="column">
                 <h2 className="title mb-6">UX Case Studies</h2>
-                <p>These were couple case studies I did for the User Experience Design bootcamp at General Assembly. A 10-week immersive UX design course emphasizing user-centered design: user research, personas, analysis, wireframes, user testing, and prototyping.</p>
+                <p>These were a couple cases studies I did for the User Experience Design bootcamp at General Assembly. A 10-week immersive UX design course emphasizing user-centered design: user research, personas, analysis, wireframes, user testing, and prototyping.</p>
               </div>
             </div>
             <Tabs>
@@ -150,13 +151,13 @@ function User() {
                     <span>Product Designer</span>
                   </div>
                   <div className="column is-6">
-                    <p>Foodie is the final project I have worked on during my UX Design bootcamp at General Assembly. It is a restaurant mobile app that search and reserve a table but in addition of that, it also tell the party how long they will have to wait until they are ready to be seated.</p>
+                    <p>Foodie is the final project I worked on during my UX Design bootcamp at General Assembly. It is a restaurant mobile app that search and reserve a table but in addition of that, it also tell the party how long they will have to wait until they are ready to be seated.</p>
                   </div>
                 </div>
                 <div className="columns">
                   <div className="column is-10 is-offset-1">
                     <h3 className="has-text-weight-bold">Problem Statement</h3>
-                    <p>Many restaurants are accepting reservations in advance so nobody has to wait. In some other restaurants they adopt the method first come first serve basics. The second methods seems to work well in a less crowded restaurant but it will become a disaster when diners started to flood in.</p>
+                    <p>Many restaurants are accepting reservations in advance so nobody has to wait. In some other restaurants they adopt the method of first come first serve basics. The second method seems to work well in a less crowded restaurant but it will become a disaster when diners start to flood in.</p>
                   </div>
                 </div>
                 <div className="columns">
@@ -165,18 +166,18 @@ function User() {
                   </div>
                 </div>
                 <Paragraph
-                  paragraph="I want to create and solve everyday problem based on personal experiences and dining out is one of my favor activities. So I began to think through how to make my dining activity more enjoyable. Restaurant is a vast industry and it caters million of people's taste buds everyday. No one person likes what others eat or vice visa so there are many varieties to choose from. However, finding common ground about food tasting is not what I am trying to solve."
+                  paragraph="I want to create and solve everyday problems based on personal experiences and dining out is one of my favorite activities. So I began to think through how to make my dining activity more enjoyable. The restaurant is a vast industry and it caters millions of people's taste buds every day. No one person likes what others eat or vice versa so there are many varieties to choose from. However, finding common ground about food tasting is not what I am trying to solve."
                 />
                 <Paragraph
-                  paragraph="After strolling around towns a couple days, I have found something that is really common: Waiting in line."
+                  paragraph="After strolling around towns for a couple days, I have found something that is really common: Waiting in line."
                 />
                 <Paragraph
-                  paragraph="Don't get me wrong. Waiting in line for something you enjoy isn't all that bad... except the feeling of uncertainty from waiting blindly."
+                  paragraph="Don't get me wrong. Waiting in line for something you enjoy isn't all that bad... except for the feeling of uncertainty from waiting blindly."
                 />
                 <div className="columns mt-4">
                   <div className="column is-10 is-offset-1">
                     <h3 className="has-text-weight-bold">Conceiving</h3>
-                    <p>Following the goal of my product comes the creation of concepts. I begin finding myself drawing, sketching, and developing the visual flow of the product. This is the bare bone system of my product that will be developed upon throughout the design process. Also, lets not forget the importance of planning where the content is going to be.</p>
+                    <p>Following the goal of my product comes the creation of concepts. I begin finding myself drawing, sketching, and developing the visual flow of the product. This is the bare-bone system of my product that will be developed upon throughout the design process. Also, let's not forget the importance of planning where the content is going to be.</p>
                   </div>
                 </div>
                 <Paragraph
@@ -197,28 +198,28 @@ function User() {
                 <div className="columns mt-4">
                   <div className="column is-10 is-offset-1">
                     <h5 className="has-text-weight-bold">Paper Prototype</h5>
-                    <p>The purpose of sketching is to present the functions and flow of the potential finish product. I will go through many different mockups making sure I have the core functions set in stone and not think of any pretty stuff such as colors and images. Colors will be deal with it later.</p>
+                    <p>The purpose of sketching is to present the functions and flow of the potential finished product. I will go through many different mockups making sure I have the core functions set in stone and not think of any pretty stuff such as colors and images. Colors will be dealt with later.</p>
                   </div>
                 </div>
                 <div className="columns mt-4">
                   <div className="column is-10 is-offset-1">
                     <h3 className="has-text-weight-bold">Prototyping</h3>
-                    <p>Once I have created skeletal sketches and potential contents on paper prototype, it is time to validate the ideas of how my product is going to work with my end-users. This stage is indeed a very important to make sure all of the features within my product run smoothly and without problems. Of course, if there are problems (which is a good thing) I can always go back to sketching and develop updated version to eliminate that specific problems.</p>
+                    <p>Once I have created skeletal sketches and potential contents on paper prototypes, it is time to validate the ideas of how my product is going to work with my end-users. This stage is indeed a very important to make sure all of the features within my product run smoothly and without problems. Of course, if there are problems (which is a good thing) I can always go back to sketching and develop an updated version to eliminate that specific problem.</p>
                     <img className="mb-5" src={foodiesDraft} alt="Prototype" title="Prototype"></img>
-                    <p>When I first began this project, I have a vision on what this product will look like and how it will work. However, the world doesn't revolve around me and no one thinks alike.</p>
-                    <p>In order to better understand how my product will work with the end-user, I have to conduct an in-person testing.</p>
+                    <p>When I first began this project, I had a vision what this product will look like and how it will work. However, the world doesn't revolve around me and no one thinks alike.</p>
+                    <p>In order to better understand how my product will work with the end-user, I have to conduct in-person testing.</p>
                     <p>The problem is what demographic of user should I use?</p>
                   </div>
                 </div>
                 <div className="columns mt-4">
                   <div className="column is-10 is-offset-1">
                     <h5 className="has-text-weight-bold">In-person User Testing</h5>
-                    <p>Choosing my target audience requires knowing how my product will react to it. So choosing a specific demographic field is important. I would think user at any ages will be suffice but looking around towns and restaurants, users at their early 20s and through mid 30s would be the most active group. Why? Because they are the most curious group and out exploring new experiences before settling down for child, family or other life changing events.</p>
+                    <p>Choosing my target audience requires knowing how my product will react to it. So choosing a specific demographic field is important. I would think user at any ages will be suffice but looking around towns and restaurants, users at their early 20s and through mid 30s would be the most active group. Why? Because they are the most curious group and out exploring new experiences before settling down for a child, family, or other life-changing events.</p>
                     <p>Before I invite users for testing, I prepare a story and several scenarios for user to follow.</p>
                     <p>This can be conducted in two different ways:</p>
                     <ol>
-                      <li>Create a story board or scenarios where I direct the participants to do certain tasks.</li>
-                      <li>Let the participants to go through their own pace.</li>
+                      <li>Create a storyboard or scenarios where I direct the participants to do certain tasks.</li>
+                      <li>Let the participants go through at their own pace.</li>
                     </ol>
                     <p>This is the only chance I get to test my product with real user data so jogs down any information is essential to further improve my product.</p>
                     <img className="mb-5" src={storyBoard} alt="Prototype" title="Prototype"></img>
@@ -226,14 +227,14 @@ function User() {
                 </div>
                 <div className="columns">
                   <div className="column is-8 is-offset-2">
-                    <p className="has-text-weight-bold is-size-2 is-size-4-mobile big-quote">"The new and improved version shaved off a few seconds off the clock because of simplier happy path and that is definitely an improvement."</p>
+                    <p className="has-text-weight-bold is-size-2 is-size-4-mobile big-quote">"The new and improved version shaved off a few seconds off the clock because of a simpler happy path and that is definitely an improvement."</p>
                   </div>
                 </div>
                 <div className="columns mt-4">
                   <div className="column is-10 is-offset-1">
                     <h3 className="has-text-weight-bold">Building High Fidelity Prototype</h3>
                     <p>This build phrase is where I take all the information and feedback gathered from prototyping and user testing and I start to build the product with design layout. I load up Sketch program and begin to experiment with different kind of layouts, colors, buttons, font sizes, and images.</p>
-                    <p>Once the final iteration is done, more testing is necessary. The more feedback I get from testing, the finer my product will be. So it is all about testing, testing, testing. It doesn't just end there when a product is released into the wild. There will be more functionalities to add and bugs fixes later.</p>
+                    <p>Once the final iteration is done, more testing is necessary. The more feedback I get from testing, the finer my product will be. So it is all about testing, testing, testing. It doesn't just end there when a product is released into the wild. There will be more functionalities to add and bug fixes later.</p>
                   </div>
                 </div>
                 <div class="columns is-centered has-text-centered mt-6 mb-6">
@@ -273,7 +274,7 @@ function User() {
                     <span>Product Designer</span>
                   </div>
                     <div className="column is-6">
-                      <p>Travel Buddy is a concept mobile app that I created while in the process of making my bootcamp project Foodie. This app is to inform travelers all nearby attractions and how to get to their destinations by using public transportations. It also shows you the travel time and different routes you can take.</p>
+                      <p>Travel Buddy is a concept mobile app that I created while making my bootcamp project Foodie. This app is to inform travelers all nearby attractions and how to get to their destinations by using public transportation. It also shows you the travel time and different routes you can take.</p>
                     </div>
                 </div>
                 <div className="columns">
@@ -304,27 +305,27 @@ function User() {
                 <div className="columns mt-4">
                   <div className="column is-10 is-offset-1">
                     <h3 className="has-text-weight-bold">Ideas</h3>
-                    <p>My initial objective was to how to improve the experience of booking a travel from planning and researching, reserving and finding a great deal, and the actual experience of traveling.</p>
+                    <p>My initial objective was how to improve the experience of booking a travel from planning and researching, reserving and finding a great deal, and the actual experience of traveling.</p>
                   </div>
                 </div>
                 <div className="columns mt-4">
                   <div className="column is-10 is-offset-1">
                     <h5 className="has-text-weight-bold">Hypotheses</h5>
-                    <p>Go on a vacation is probably the only thing that no one hates. It is a great way to explore new adventure and the best of all to get rid of stress and negative thoughts about life. However, booking an entire trip takes time and time a lot of people don't have.</p>
+                    <p>Going on a vacation is probably the only thing that no one hates. It is a great way to explore new adventures and best of all to get rid of stress and negative thoughts about life. However, booking an entire trip takes time and time a lot of people don't have.</p>
                     <img className="mb-5" src={travelBuddy01} alt="Travel Interview" title="Travel Interview"></img>
                     <h5 className="has-text-weight-bold">Methods</h5>
-                    <p>I conducted interviews with travelers and survey what kind of people use what kind of services more. For examples, people who are savvy about computer tend to use online reservation for all their needs. On the contrary, older people and maybe family tend to use other methods such as travel agency to help them book vacation. </p>
-                    <p>Also, what steps are need it to take in order to bring in more travelers during busy and off season. Summer is the busiest season and prices usually go up.</p>
+                    <p>I conducted interviews with travelers and survey what kind of people use what kind of services more. For example, people who are savvy about computers tend to use online reservations for all their needs. On the contrary, older people and maybe family tend to use other methods such as travel agencies to help them book vacations. </p>
+                    <p>Also, what steps are needed to take to bring in more travelers during the busy and off-season. Summer is the busiest season and prices usually go up.</p>
                     <img className="mb-5" src={travelBuddy02} alt="Persona" title="Persona"></img>
                     <h5 className="has-text-weight-bold">Conduct</h5>
-                    <p>During one weekend I went to a Travel & Adventure Trade show down in Santa Clara Convention Center, where many travel agency and tourist attraction companies gathered there to show off deals and information.</p>
-                    <p>For interviewees, I asked them questions about what they do, why are they here today, and who are you trying to help. All of them said they were here because they wanted to promote their products to bring more customers to buy their products. Funny thing was the majority of the customers here were middle-aged to seniors. I asked them why and they said online booking takes too much of their time and some of them said they didn't really know how to use the computer.</p>
+                    <p>During one weekend I went to a Travel & Adventure Trade showdown in Santa Clara Convention Center, where many travel agencies and tourist attraction companies gathered there to show off deals and information.</p>
+                    <p>For interviewees, I asked them questions about what they do, why are they here today, and who are you trying to help. All of them said they were here because they wanted to promote their products to bring more customers to buy their products. The funny thing was the majority of the customers here were middle-aged to seniors. I asked them why and they said online booking takes too much of their time and some of them said they didn't really know how to use the computer.</p>
                   </div>
                 </div>
                 <div className="columns mt-4">
                   <div className="column is-10 is-offset-1">
                     <h3 className="has-text-weight-bold">Competitive Analysis</h3>
-                    <p>Why does competitor exist? Competition is what driven the whole economy forward. The need to be better than the others, and it is the backbone of every economic and power. However, one thing for sure is that each competitor’s main goal is to solve the problems what customers are having. There is no one competitor better than other. They are focusing on the area where they are the strongest.</p>
+                    <p>Why does a competitor exist? Competition is what drives the whole economy forward. The need to be better than the others, and it is the backbone of every economic and power. However, one thing for sure is that each competitor's main goal is to solve the problems that customers are having. There is no one competitor better than another. They are focusing on the area where they are the strongest.</p>
                   </div>
                 </div>
                 <div className="columns mt-4">
@@ -337,7 +338,7 @@ function User() {
                 </div>
                 <div className="columns mt-4">
                   <div className="column is-10 is-offset-1">
-                    <p>Take above two images for examples, Ecuador and Japan. Obviously, both are in the same market as tourist attractions but promoting different countries. They are competitors but for different regions of the world. They are both doing well promoting their own countries by showing customers what the country looks like at first glance. If customers find them interesting, they will go talk to them. They accomplished their goal by being here. More customers equal more money.</p>
+                    <p>Take the above two images, for example, Ecuador and Japan. Both are in the same market as tourist attractions but promote different countries. They are competitors but for different regions of the world. They are both doing well promoting their own countries by showing customers what the country looks like at first glance. If customers find them interesting, they will go talk to them. They accomplished their goal by being here. More customers equals more money.</p>
                   </div>
                 </div>
                 <div className="columns mt-4">
@@ -345,7 +346,7 @@ function User() {
                     <h3 className="has-text-weight-bold">Sitemap and User Flow</h3>
                     <img className="mb-5" src={travelBuddy05} alt="User Flow" title="User Flow"></img>
                     <h3 className="has-text-weight-bold">Low Fidelity Wireframes</h3>
-                    <p>As usual, paper prototype is my go to guy to design a low fidelity prototype. Paper prototype is also much easier to fix right away.</p>
+                    <p>As usual, the paper prototype is my go-to guy to design a low-fidelity prototype. Paper prototypes are also much easier to fix right away.</p>
                     <img className="mb-5" src={travelBuddy06} alt="Wireframe" title="Wireframe"></img>
                     <h3 className="has-text-weight-bold">High Fidelity Prototypes</h3>
                     <img className="mb-5" src={travelBuddy07} alt="High Fidelity" title="High Fidelity"></img>
