@@ -663,6 +663,11 @@ footer.footer {
   .year {
     margin: 30px;
   }
+  .upwork {
+    &:hover > svg {
+      color: rgb(20, 168, 0);
+    }
+  }
   .linkedin {
     &:hover > svg {
       color: rgb(13,118,168);
