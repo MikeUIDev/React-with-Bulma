@@ -169,7 +169,7 @@ function About() {
                             <li>Web Development</li>
                             <li>HTML</li>
                             <li>CSS</li>
-                            <li>Sass</li>
+                            <li>SASS</li>
                             <li>Bootstrap & Bulma CSS Framework</li>
                             <li>JavaScript</li>
                             <li>React</li>

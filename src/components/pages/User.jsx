@@ -36,7 +36,8 @@ import travelBuddy07 from "../../assets/images/travel-app-experiment.jpg"
 import travelBuddy08 from "../../assets/images/travel-app-experiment-02.jpg"
 
 import designSystems from "../../assets/images/Meta_Wiki_Design_System-Mike_Lin.jpg"
-import tekSystemsRedsign from "../../assets/images/Mike_Lin_TEKsystems_page_redesign.jpg"
+import tekSystemsRedsign from "../../assets/images/Mike_Lin_TEKsystems_page_redesign.png"
+import taiwanTravelCo from "../../assets/images/Taiwan_Travel_Co_LandingPage.png"
 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import BackToTop from "../Backtotop";
@@ -81,23 +82,37 @@ function User() {
             </div>
             <div className="columns mb-8">
               <div className="column">
+                <h2 className="title mb-6">Landing Page</h2>
+                <img className="mb-4" src={taiwanTravelCo} alt="Taiwan Travel Co Landing Page" title="Taiwan Travel Co Landing Page" />
+                <p>The project aims to create a comprehensive and engaging website that highlights Taiwan as a top travel destination. The site will provide valuable information on top attractions, activities, and practical travel tips, making it a one-stop resource for potential visitors.</p>
+                <p>Tools used:</p>
+                <ul>
+                  <li><a href="https://www.figma.com/proto/ryovGRW9QQS49DeTdWur3w/Taiwan-Travel-Co?node-id=0-1&t=sUKIIzkIWODKyDIi-1" target="_blank" alt="Figma Prototype" title="Figma Prototype">Figma</a> (Link to Prototype)</li>
+                  <li>Affinity Photo</li>
+                </ul>
 
-              <h2 className="title mb-6">Page Redesign</h2>
+                {/* <div>
+                  <button onClick={openModal2}>Open Modal</button>
+                  <Modal isOpen={modalOpen2} onClose={closeModal2}>
+                    <img className="" src={designSystems} alt="Meta Design Systems" title="Meta Design Systems" />
+                  </Modal>
+                </div> */}
+
+              </div>
+              <div className="column">
+
+                <h2 className="title mb-6">Page Redesign</h2>
                 {/* <a href="https://mikelinstudio.com/design/Mike_Lin_TEKsystems_page_redesign.pdf" target="_blank" alt="TEKsystems page redesign" rel="noreferrer">
                   <img className="mb-4" src={tekSystemsRedsign} alt="TEKsystems page redesign" title="TEKsystems page redesign" />
                 </a> */}
                 <img className="mb-4" src={tekSystemsRedsign} alt="TEKsystems page redesign" title="TEKsystems page redesign" />
-                <p>A landing page redesign from one of TEKsystems' <a href="https://www.teksystems.com/en/insights/version-next-now/2023/dojo-workforce-development-strategy" alt="TEKsystems Version Next Now" target="_blank" rel="noreferrer">feature article pages</a>.</p>
-                <p>The original article was a text-heavy site and needed a way to modularize different parts of elements into easy-to-read sections. Furthermore, it needed balancing between white spaces and content areas to improve user experience.</p>
+                <p>The original <a href="https://www.teksystems.com/en/insights/version-next-now/2023/dojo-workforce-development-strategy" alt="TEKsystems Version Next Now" target="_blank" rel="noreferrer">feature article</a> was text-heavy and required modularization of its elements into easily readable sections. Additionally, it needed a better balance between white space and content areas to enhance the user experience.</p>
                 <p>Tool used:</p>
                 <ul>
-                  <li>Figma</li>
+                <li><a href="https://www.figma.com/proto/M0Mfolj9J6Sk01gkL1EORi/TEKsystems?node-id=0-1&t=VQyzPiOPuauXIwBi-1" target="_blank" alt="Figma Prototype" title="Figma Prototype">Figma</a> (Link to Prototype)</li>
+                <li>Affinity Photo</li>
+                <li>Affinity Designer</li>
                 </ul>
-                <p className="link-width is-size-5">
-                {<Link listing="View Full Redesign (PDF)" altText="TEKsystems page redesign link" urlLink="https://mikelinstudio.com/design/Mike_Lin_TEKsystems_page_redesign.pdf" />}
-                </p>
-
-
 
                 {/* <div>
                   <button onClick={openModal}>Open Modal TEK</button>
@@ -107,6 +122,8 @@ function User() {
                 </div> */}
 
               </div>
+            </div>
+            <div className="columns mb-8">
               <div className="column">
                 <h2 className="title mb-6">Design Systems</h2>
                 <img className="mb-4" src={designSystems} alt="Meta Design Systems" title="Meta Design Systems" />
@@ -124,6 +141,7 @@ function User() {
                 </div> */}
 
               </div>
+              <div className="column"></div>
             </div>
 
             <div className="columns mb-6">
