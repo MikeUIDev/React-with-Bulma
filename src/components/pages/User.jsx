@@ -87,7 +87,7 @@ function User() {
                 <p>The project aims to create a comprehensive and engaging website that highlights Taiwan as a top travel destination. The site will provide valuable information on top attractions, activities, and practical travel tips, making it a one-stop resource for potential visitors.</p>
                 <p>Tools used:</p>
                 <ul>
-                  <li>{<Link listing="Figma Prototype" altText="Figma Prototype" urlLink="https://www.figma.com/proto/ryovGRW9QQS49DeTdWur3w/Taiwan-Travel-Co?node-id=0-1&t=sUKIIzkIWODKyDIi-1" />}</li>
+                  <li>Figma - {<Link listing="Prototype" altText="Prototype" urlLink="https://www.figma.com/proto/ryovGRW9QQS49DeTdWur3w/Taiwan-Travel-Co?node-id=0-1&t=sUKIIzkIWODKyDIi-1" />}, {<Link listing="Dev Mode" altText="Dev Mode" urlLink="https://www.figma.com/design/ryovGRW9QQS49DeTdWur3w/Taiwan-Travel-Co?node-id=465-2579" />}</li>
                   <li>Affinity Photo</li>
                 </ul>
 
@@ -109,7 +109,7 @@ function User() {
                 <p>The original <a href="https://www.teksystems.com/en/insights/version-next-now/2023/dojo-workforce-development-strategy" alt="TEKsystems Version Next Now" target="_blank" rel="noreferrer">feature article</a> was text-heavy and required modularization of its elements into easily readable sections. Additionally, it needed a better balance between white space and content areas to enhance the user experience.</p>
                 <p>Tools used:</p>
                 <ul>
-                <li>{<Link listing="Figma Prototype" altText="Figma Prototype" urlLink="https://www.figma.com/proto/M0Mfolj9J6Sk01gkL1EORi/TEKsystems?node-id=0-1&t=VQyzPiOPuauXIwBi-1" />}</li>
+                <li>Figma - {<Link listing="Prototype" altText="Prototype" urlLink="https://www.figma.com/proto/M0Mfolj9J6Sk01gkL1EORi/TEKsystems?node-id=0-1&t=VQyzPiOPuauXIwBi-1" />}</li>
                 <li>Affinity Photo</li>
                 <li>Affinity Designer</li>
                 </ul>
