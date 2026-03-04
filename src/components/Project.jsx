@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 import ReactPlayer from "react-player/lazy";
 
 function Project(props) {
@@ -7,7 +7,13 @@ function Project(props) {
       <div className="column is-12">
         <div className="card">
           <div className="card-image video-player">
-            <ReactPlayer url={props.videoUrl} light={props.videoPoster} controls={true} width="612px" height="413px" />
+            <ReactPlayer
+              url={props.videoUrl}
+              light={props.videoPoster}
+              controls={true}
+              width="612px"
+              height="413px"
+            />
           </div>
           {/* <div className="card-image">
             <video loading="lazy" playsInline muted controls className="video" poster={props.videoPoster} width="612" height="413">
@@ -17,16 +23,21 @@ function Project(props) {
           </div> */}
           <footer className="card-footer mt-4">
             <div className="card-footer-item mb-0 is-flex is-align-items-flex-start is-justify-content-flex-start is-flex-direction-column">
-              <p className="link-width is-size-5">
+              <p className="link-width is-size-5 has-text-weight-bold">
                 {props.name}
                 {/* <a href={props.link} alt={props.name} title={props.name} target="_blank" rel="noreferrer">{props.name} &nbsp; <FontAwesomeIcon className="fa-icon" icon={faExternalLink} size="xs"></FontAwesomeIcon> </a> */}
+              </p>
+              <p className="is-size-6">
+                <span className="has-text-weight-bold">Role:</span> {props.role}
+              </p>
+              <p className="is-size-6">
+                <span className="has-text-weight-bold">Stack:</span>{" "}
+                {props.stack}
               </p>
               <p className="tag is-neon is-medium">{props.type}</p>
             </div>
             <div className="card-footer-item has-text-left is-flex is-align-items-flex-start is-justify-content-flex-start">
-              <p className="is-small">
-                {props.description}
-              </p>
+              <p className="is-size-6">{props.description}</p>
             </div>
           </footer>
         </div>

@@ -4,53 +4,54 @@ import Job from "../Job";
 import BackToTop from "../Backtotop";
 // import FadeIn from "../FadeIn"
 
-const first = [
-  'Responsive Web Development & Design',
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'Foundation CSS Framework',
-  'UX Design',
-  'Adobe Photoshop',
-  'npm/node',
-  'GitHub/Git',
-  'Heroku',
-  'Contentful',
-  'Salesforce Marketing Cloud Email Studio',
-  'Google Analytics'
-];
+import HoverMoveText from "../HoverMoveText";
+import FlipReveal from "../FlipReveal";
+import BlendReveal from "../BlendReveal";
 
+const first = [
+  "Interaction design",
+  "High-fidelity prototyping",
+  "Motion design",
+  "UI animation",
+  "AI-assisted prototyping",
+  "Vibe coding",
+  "Frontend development",
+  "Responsive web design",
+  "Cross-functional collaboration",
+  "Design-to-development workflows",
+];
 const second = [
-  'Responsive Web Development & Design',
-  'Figma',
-  'Adobe Photoshop',
-  'Adobe Illustrator',
-  'Mailchimp',
-  'Design Systems',
-  'Wireframe',
-  'Prototype',
-  'HTML',
-  'CSS',
-  'JavaScript'
+  "Interaction design",
+  "Product design execution",
+  "Design systems",
+  "High-fidelity prototyping",
+  "Frontend implementation",
+  "Responsive design",
+  "Cross-functional collaboration",
+  "Usability integration",
+  "Scalable interface design",
+  "Stakeholder communication",
 ];
 const third = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'Bootstrap CSS Framework',
-  'Photoshop',
-  'Grunt',
-  'Vagrant',
-  'Apache Version Control'
+  "UI design",
+  "Frontend development",
+  "Responsive web design",
+  "Interaction design support",
+  "Performance optimization",
+  "SEO-aware frontend development",
+  "Conversion optimization",
+  "Cross-functional collaboration",
+  "Design system consistency",
+  "Large-scale website support",
 ];
 
 const fourth = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'Shopify',
-  'WordPress',
-  'Photoshop'
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "Shopify",
+  "WordPress",
+  "Photoshop",
 ];
 
 // const fourth = [
@@ -68,28 +69,37 @@ const fourth = [
 // ];
 
 function About() {
-
-  const listItemsFirst = first.map(skill =>
-    <div class="control"><span class="tag is-neon is-medium">{skill}</span></div>
-  )
-  const listItemsSecond = second.map(skill =>
-    <div class="control"><span class="tag is-neon is-medium">{skill}</span></div>
-  )
-  const listItemsThird = third.map(skill =>
-    <div class="control"><span class="tag is-neon is-medium">{skill}</span></div>
-  )
-  const listItemsFourth = fourth.map(skill =>
-    <div class="control"><span class="tag is-neon is-medium">{skill}</span></div>
-  )
+  const listItemsFirst = first.map((skill) => (
+    <div class="control">
+      <span class="tag is-neon is-medium">{skill}</span>
+    </div>
+  ));
+  const listItemsSecond = second.map((skill) => (
+    <div class="control">
+      <span class="tag is-neon is-medium">{skill}</span>
+    </div>
+  ));
+  const listItemsThird = third.map((skill) => (
+    <div class="control">
+      <span class="tag is-neon is-medium">{skill}</span>
+    </div>
+  ));
+  const listItemsFourth = fourth.map((skill) => (
+    <div class="control">
+      <span class="tag is-neon is-medium">{skill}</span>
+    </div>
+  ));
 
   // const listItemsFourth = fourth.map(skill =>{
   //   const test = `${skill.skills}`
   //   return <div class="control"><span class="tag is-neon is-medium">{test}</span></div>
   // })
 
-
   return (
-    <section aria-label="About me section" class="about hero content is-large is-fullheight-with-navbar">
+    <section
+      aria-label="About me section"
+      class="about hero content is-large is-fullheight-with-navbar"
+    >
       <div class="page-body">
         <div class="container">
           {/* <div class="columns">
@@ -110,24 +120,90 @@ function About() {
               <div class="column is-12">
                 <div class="content is-medium">
                   <div class="mb-8">
-                    <p className="is-size-4 has-text-weight-bold">A Frontend Developer and Designer with over 10 years of experience. I specialize in crafting website interfaces and aligning business objectives with user needs. I actively continue to seek challenges in a dynamic design environment.</p>
-                    <p>My current focus revolves around improving frontend development tech stacks such as but not limited to JavaScript, React, Next.js, RESTful, and APIs Services, testing framework Jest, and learning different types of CSS frameworks Bulma and Tailwind.</p>
-                    <p>On the creative side of me, it is important to enhance the visual and functional aspects of product user interfaces and focus on optimizing user experiences between humans and products.</p>
-                    <p className="has-text-weight-bold">To be able to code and design well is an unicorn of the digital world. Collaboration between designers and developers is paramount and if a Frontend Developer possesses UX/UI design expertise, inter-team communication becomes seamless.</p>
-                    <p>I am a person-oriented individual who is motivated by helping others. Knowing what I do that contributes to others positively derives satisfaction to me. Most importantly, the key to successful communication is empathizing with others and tailoring my message to resonate with their needs and desires.</p>
+                    {/* <p className="is-size-4 has-text-weight-bold">
+                      I'm a Product Designer who bridges the gap between design
+                      and development to craft digital experiences that feel
+                      seamless and human. With over 10 years of experience, I
+                      blend visual storytelling, UX thinking, and front-end
+                      expertise to bring ideas to life—from concept to launch.
+                    </p>
+                    <p>
+                      My work focuses on aligning business goals with user needs
+                      through clear design systems, responsive interfaces, and
+                      scalable front-end architectures. I'm fluent in tools and
+                      technologies like JavaScript, React, Vite, RESTful APIs,
+                      and Tailwind CSS—allowing me to design with a strong
+                      awareness of what's technically possible.
+                    </p>
+                    <p>
+                      I believe the best products come from collaboration. My
+                      hybrid background helps teams communicate better,
+                      prototype faster, and deliver designs that don't just look
+                      good, but work beautifully. Empathy drives everything I
+                      do—whether it's understanding users, collaborating with
+                      developers, or refining every pixel for clarity and
+                      impact.
+                    </p> */}
+
+                    {/* <p className="is-size-4 has-text-weight-bold">
+                      I'm a designer and front-end developer who enjoys turning
+                      complex, ambiguous problems into clear, usable digital
+                      experiences. My work sits at the intersection of design,
+                      interaction, and implementation, allowing me to think
+                      through problems from both a user and a technical
+                      perspective.
+                    </p> */}
+                    <p>
+                      I'm a designer and front-end developer who enjoys turning
+                      complex, ambiguous problems into clear, usable digital
+                      experiences. My work sits at the intersection of design,
+                      interaction, and implementation, allowing me to think
+                      through problems from both a user and a technical
+                      perspective.
+                    </p>
+                    <p>
+                      With over 10 years of experience, I've worked across the
+                      full lifecycle of digital products—from early exploration
+                      and UX strategy to polished, shipped interfaces. I focus
+                      on clarity and usability: intuitive flows, thoughtful
+                      visual hierarchy, and patterns that scale across screens
+                      and use cases.
+                    </p>
+                    <p>
+                      I design primarily in Figma, working with components and
+                      systems to ensure consistency and flexibility as products
+                      grow. I care about how things are actually built, so I
+                      design with real constraints in mind—spacing, states,
+                      responsiveness, and edge cases—so ideas translate smoothly
+                      from design into code.
+                    </p>
+                    <p>
+                      I also bring hands-on front-end experience into my process
+                      by designing and building responsive interfaces using
+                      HTML, CSS, and JavaScript. This helps me prototype
+                      realistically, collaborate closely with engineers, and
+                      make informed design decisions based on what's possible in
+                      production. I'm most comfortable in collaborative
+                      environments where design and development work closely
+                      together, and where attention to detail makes the
+                      experience feel simple, intentional, and reliable.
+                    </p>
                   </div>
                   <h2 className="title mb-4">Experience</h2>
-                  <section id="experience" class="experience columns is-flex-desktop-only">
+                  <section
+                    id="experience"
+                    class="experience columns is-flex-desktop-only"
+                  >
                     {/* <aside className="column is-2 is-size-5 has-text-weight-bold left-text">Experience</aside> */}
                     <div className="column is-8 jobs">
                       <div className="job">
                         <Job
                           key="1"
-                          title = "Digital Developer"
-                          titleLink = "https://www.espn.com"
-                          company = "ESPN"
-                          date = "2021 - 2024"
-                          description = "In charge of creating and updating existing front-facing promotion sites in the ESPN Visual Storytelling team and working closely with external clients to create interactive landing pages."
+                          title="Digital Developer"
+                          titleLink="https://www.espn.com"
+                          company="ESPN"
+                          date="2021 - 2024"
+                          description="Designed and built interactive, front-facing web experiences for ESPN's Visual Storytelling team, delivering responsive, motion-rich pages that balanced visual storytelling with performance and usability. Collaborated with designers, editors, and developers to translate concepts into production-ready interfaces that scaled cleanly across devices and content types."
                         />
                         <div className="skills is-flex is-flex-wrap-wrap">
                           {listItemsFirst}
@@ -136,11 +212,11 @@ function About() {
                       <div className="job">
                         <Job
                           key="2"
-                          title = "Frontend Developer"
-                          titleLink = "https://about.meta.com/"
-                          company = "Meta"
-                          date = "2019 - 2021"
-                          description = "Led internal web projects that designed and developed user-centered mobile-first single-page applications (SPA) and landing pages."
+                          title="Frontend Designer & Developer"
+                          titleLink="https://about.meta.com/"
+                          company="Meta"
+                          date="2019 - 2021"
+                          description="Designed and developed internal web applications supporting communication and product workflows, with a focus on consistent UI patterns and responsive layouts. Worked closely with engineers and product partners to align design intent with implementation and support efficient iteration cycles."
                         />
                         <div className="skills is-flex is-flex-wrap-wrap">
                           {listItemsSecond}
@@ -149,11 +225,11 @@ function About() {
                       <div className="job">
                         <Job
                           key="3"
-                          title = "UI Designer"
-                          titleLink = "https://www.nolo.com"
-                          company = "Internet Brands (Nolo)"
-                          date = "2011 - 2019"
-                          description = "Responsible for creating and updating the user interface of high-profile customer-facing SaaS websites, including customer self-service web portal & enterprise application for the Sales team."
+                          title="UI Designer"
+                          titleLink="https://www.nolo.com"
+                          company="Internet Brands (Nolo)"
+                          date="2011 - 2019"
+                          description="Contributed to the design and front-end execution of large-scale, customer-facing websites and SaaS platforms, creating responsive interfaces for self-service tools and content-driven products. Partnered cross-functionally to modernize legacy interfaces, improve performance, and maintain visual consistency across a broad ecosystem of sites."
                         />
                         <div className="skills is-flex is-flex-wrap-wrap">
                           {listItemsThird}
@@ -163,46 +239,74 @@ function About() {
                     <aside className="column is-3 is-offset-1 is-size-5 has-text-weight-bold right-text">
                       <div className="columns">
                         <div className="column is-12 content is-normal">
-                          <p className="is-size-4 has-text-weight-bold">Skills</p>
-                          <p className="is-size-5 has-text-weight-bold">Frontend</p>
+                          <p className="is-size-4 has-text-weight-bold">
+                            Core Skills
+                          </p>
+                          <p className="is-size-5 has-text-weight-bold">
+                            Design & UX
+                          </p>
                           <ul className="skill-listings">
-                            <li>Web Development</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>SASS</li>
-                            <li>Bootstrap & Bulma CSS Framework</li>
-                            <li>JavaScript</li>
-                            <li>React</li>
-                            <li>Git / GitHub</li>
-                            <li>WordPress</li>
-                            <li>Contentful</li>
-                            <li>Email Marketing</li>
+                            <li>UX/UI design</li>
+                            <li>Interaction design</li>
+                            <li>User flows & information architecture</li>
+                            <li>Accessibility principles</li>
+                            <li>Visual hierarchy & layout</li>
                           </ul>
-                          <p className="is-size-5 has-text-weight-bold">Design</p>
+                          <p className="is-size-5 has-text-weight-bold">
+                            Design Systems & Patterns
+                          </p>
                           <ul className="skill-listings">
-                            <li>Responsive Web Design</li>
-                            <li>User Experience Design</li>
-                            <li>Figma</li>
-                            <li>Design Systems</li>
-                            <li>Wireframing</li>
-                            <li>Prototyping</li>
-                            <li>Fidelity</li>
+                            <li>Component-based design</li>
+                            <li>Design systems</li>
+                            <li>Reusable UI patterns</li>
+                            <li>Responsive layouts</li>
+                          </ul>
+                          <p className="is-size-5 has-text-weight-bold">
+                            Front-End Development
+                          </p>
+                          <ul className="skill-listings">
+                            <li>HTML, CSS/SASS, JavaScript, React</li>
+                            <li>Responsive web development</li>
+                            <li>Component-based UI implementation</li>
+                            <li>Performance-aware design</li>
+                          </ul>
+                          <p className="is-size-5 has-text-weight-bold">
+                            Tools
+                          </p>
+                          <ul className="skill-listings">
+                            <li>Figma (components, libraries, prototyping)</li>
+                            <li>Sketch (working knowledge)</li>
+                            <li>
+                              Adobe Photoshop & Illustrator, Affinity Suite
+                            </li>
+                          </ul>
+                          <p className="is-size-5 has-text-weight-bold">
+                            Collaboration
+                          </p>
+                          <ul className="skill-listings">
+                            <li>Cross-functional collaboration</li>
+                            <li>Design-to-development workflows</li>
+                            <li>Stakeholder communication</li>
+                            <li>Iterative problem solving</li>
                           </ul>
                         </div>
                       </div>
                     </aside>
                   </section>
                   <h2 className="title mb-4">Project</h2>
-                  <section id="experience" class="experience columns is-flex-desktop-only">
+                  <section
+                    id="experience"
+                    class="experience columns is-flex-desktop-only"
+                  >
                     <div className="column is-9 jobs">
                       <div className="job">
                         <Job
                           key="4"
-                          title = "Frontend Developer"
-                          titleLink = "https://www.katriscat.com/"
-                          company = "Katris"
-                          date = "2016 - 2017"
-                          description = "Implemented new WordPress e-commerce business store using Shopify from planning with the designer to release and continually maintaining the site with new features."
+                          title="Frontend Developer"
+                          titleLink="https://www.katriscat.com/"
+                          company="Katris"
+                          date="2016 - 2017"
+                          description="Designed and built end-to-end websites for nonprofits and small businesses, owning visual design, UI structure, and front-end implementation. Worked directly with clients to translate goals and requirements into clear, usable digital experiences from concept through launch."
                         />
                         <div className="skills is-flex is-flex-wrap-wrap">
                           {listItemsFourth}
@@ -210,7 +314,6 @@ function About() {
                       </div>
                     </div>
                   </section>
-
 
                   {/* <div class="columns is-centered has-text-centered">
                     <div class="column">
@@ -220,7 +323,6 @@ function About() {
                       />
                     </div>
                   </div> */}
-
                 </div>
               </div>
             </div>
@@ -249,7 +351,6 @@ function About() {
             </a>
             </nav>
           </div> */}
-
         </div>
       </div>
       {/* Back to Top button */}

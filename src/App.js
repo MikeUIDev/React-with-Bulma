@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 // import { HashRouter as Router, Routes, Route, } from "react-router-dom";
 // import { BrowserRouter as Router, Routes, Route, } from "react-router-dom";
-import { MemoryRouter as Router, Routes, Route, } from "react-router-dom";
+import { MemoryRouter as Router, Routes, Route } from "react-router-dom";
 
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-import { fab } from '@fortawesome/free-brands-svg-icons'
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { fab } from "@fortawesome/free-brands-svg-icons";
 
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Navbar/Footer";
@@ -13,33 +13,35 @@ import Footer from "./components/Navbar/Footer";
 import Home from "./components/pages/Index";
 import Work from "./components/pages/Work";
 import User from "./components/pages/User";
+import Design from "./components/pages/Design";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
 
 // import '../src/assets/css/App.css';
 
-import "./assets/sass/bulma.scss"
+import CursorFollower from "./components/CursorFollower";
 
+import "./assets/sass/bulma.scss";
 
-library.add(faCoffee, fab)
+library.add(faCoffee, fab);
 
 function App() {
   return (
-      <Router>
-          <Navbar />
-          <Routes>
-              <Route exact path="/" element={<Home />} />
-              <Route path="/work" element={<Work />} />
-              <Route path="/user" element={<User />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />}
-              />
-          </Routes>
-          <Footer />
-      </Router>
+    <Router>
+      <CursorFollower />
+      <Navbar />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/work" element={<Work />} />
+        <Route path="/user" element={<User />} />
+        <Route path="/design" element={<Design />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
-
 
 // function App() {
 //   return (
